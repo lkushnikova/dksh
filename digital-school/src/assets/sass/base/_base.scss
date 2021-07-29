@@ -70,7 +70,7 @@ color: $text-color--light;
 .top-panel-about p{
   font-size:$text-xs;
 }
-.banner-logo{
+figcaption.banner-logo{
   font-size:$text-xl;
   color:$header-color;
 font-family: Montserrat Alternates;
@@ -78,4 +78,5 @@ font-style: normal;
 font-weight: 600;
 font-size: 50px;
 line-height: 61px;
+padding-left:1.5rem;
 }
