@@ -1,0 +1,81 @@
+*{
+ margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+  
+
+html, body{
+  height: 100%;
+  font-size: $text-m;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.4;
+}
+  
+
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+  
+
+a{
+   text-decoration: none;
+  transition: all .2s linear;
+}
+.logo-figure{
+  display: flex;
+  font-style: normal;
+
+display: flex;
+align-items: center;
+
+ 
+}
+.top-panel figcaption{
+  color: #FBFBFB;
+  font-weight: 500;
+  font-size: $text-xs;
+  line-height: 15px;
+  padding-left:0.5rem;
+}
+.top-panel{
+  background-color: $base-color;
+  padding:30px 15px;
+  display:flex;
+  align-items: flex-start;
+  color: $text-color--light;
+  a{
+    color: $text-color--light;
+  }
+ 
+}
+ul.for-horizontal-list{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  
+}
+.top-panel-contact p, .top-panel-about p{
+  font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: $text-m;
+line-height: 20px;
+text-align: center;
+color: $text-color--light;
+
+}
+.top-panel-about p{
+  font-size:$text-xs;
+}
+.banner-logo{
+  font-size:$text-xl;
+  color:$header-color;
+font-family: Montserrat Alternates;
+font-style: normal;
+font-weight: 600;
+font-size: 50px;
+line-height: 61px;
+}
