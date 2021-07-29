@@ -84,3 +84,13 @@ padding-left:2rem;
   display: flex;
   justify-content:space-between;
 }
+.banner-sidemenu-link{
+  display:block;
+  padding:1rem;
+  border:1px solid $base-color;
+  border-radius:10px;
+  background-color:#fff;
+  color:$base-color;
+  text-align:center;
+  margin-bottom:0.5rem;
+}
