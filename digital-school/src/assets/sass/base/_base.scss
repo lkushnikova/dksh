@@ -87,10 +87,13 @@ padding-left:2rem;
 .banner-sidemenu-link{
   display:block;
   padding:1rem;
-  border:1px solid $base-color;
+  border:2px solid #8CC754;
   border-radius:10px;
   background-color:#fff;
   color:$base-color;
   text-align:center;
   margin-bottom:0.5rem;
+  a{
+    font-size:$text-xs;
+  }
 }
