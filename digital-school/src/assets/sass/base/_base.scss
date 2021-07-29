@@ -78,5 +78,9 @@ font-style: normal;
 font-weight: 600;
 font-size: 50px;
 line-height: 61px;
-padding-left:1.5rem;
+padding-left:2rem;
+}
+.banner{
+  display: flex;
+  justify-content:space-between;
 }
