@@ -10,8 +10,7 @@
 </head>
 <body>
  <div class="container">
-   <header>
-   <div class="top-panel row">
+   <section class="top-panel row">
     <div class="col-md-4 sstu-logo">
       <a href="https://sstu.ru">
       <figure class="logo-figure">
@@ -22,38 +21,75 @@
   </a>
     </div>
     <div class="col-md-4  top-panel-contact ">
-      <p>+7(8452) 99-87-34</p>
+      <p class="top-panel-phone">+7(8452) 99-87-34</p>
       <ul class="for-horizontal-list list-unstyled ">
-        <li><a href="https://instagram.com"><img src="assets/images/insta.svg" alt="instagram"></a></li>
-        <li><a href="https://youtube.com"><img src="assets/images/ytube.svg" alt="youtube"></a></li>
-        <li><a href="https://vk.com"><img src="assets/images/vk.svg" alt="vk"></a></li>
-        <li><a href="https://facebook.com"><img src="assets/images/fb.svg" alt="fb"></a></li>
+        <li><a href="https://instagram.com"><img src="assets/images/insta.svg" class="social-icons" alt="instagram"></a></li>
+        <li><a href="https://youtube.com"><img src="assets/images/ytube.svg" class="social-icons" alt="youtube"></a></li>
+        <li><a href="https://vk.com"><img src="assets/images/vk.svg" class="social-icons" alt="vk"></a></li>
+        <li><a href="https://facebook.com"><img src="assets/images/fb.svg" class="social-icons" alt="fb"></a></li>
       </ul>
     </div>
     <div class="col-md-3 top-panel-about">
       <p><a href="https://www.sstu.ru/sveden/" target="_blank" alt="Сведения об образовательной организации">Сведения об образовательной организации</a></p>
     </div>
-    <div class="col-md-1">
-      <a href="#"><img src="assets/images/glasses.svg" alt="glasses"></a>
+    <div class="col-md-1 justify-content-end">
+      <a href="#"><img src="assets/images/glasses.svg"  alt="glasses"></a>
     </div>
-   </div>
-   <div class="banner pt-5 pl-2">
+  </section>
+   <section class="banner pt-5 pl-2">
     <div class="col-md-6 logo">
       <a href="index.html">
       <figure class="logo-figure ">
-        <img src="assets/images/logo.svg"
+        <img src="assets/images/logo.png"
         alt="logo">
         <figcaption class="banner-logo">Детская компьютерная школа</figcaption>
     </figure>
   </a>
     </div>
     <div class="banner-sidemenu ">
-      <a href="#" class="banner-sidemenu-link">Высшее образование</a>
+      <a href="https://inpit.sstu.ru" class="banner-sidemenu-link">Высшее образование</a>
       <a href="#" class="banner-sidemenu-link">Дополнительное образование</a>
-      <a href="#" class="active banner-sidemenu-link">Детская компьютерная школа</a>
+      <a href="https://inpit.sstu.ru/digital-school" class="banner-sidemenu-link--active banner-sidemenu-link">Детская компьютерная школа</a>
     </div>
-   </div>
-  </header>
+  </section>
+  <nav class="top-menu">
+    <ul class="top-menu-list list-unstyled ">
+      <li class="top-menu-list-item active"><a href="#">О нас</a></li>
+      <li class="top-menu-list-item"><a href="#">Курсы</a></li>
+      <li class="top-menu-list-item"><a href="#">Подготовка к ЕГЭ</a></li>
+      <li class="top-menu-list-item"><a href="#">Абитуриенту</a></li>
+      <li class="top-menu-list-item"><a href="#">Отзывы</a></li>
+      <li class="top-menu-list-item"><a href="#">Контакты</a></li>
+    </ul>
+  </nav>
+  <section class="main-banner">
+    <div class="main-banner-text">
+      <p class="main-banner-text-small">Научим школьников любым</p>
+      <p class="main-banner-text-large">Информационным технологиям</p>
+      <a href="#" class="main-banner-text-a">Перейти к курсам</a>
+    </div>
+  </section>
+  <section class="courses">
+    <div class="row flex courses-filter">
+      <form action="#" method="GET">
+      <div class="col-4">
+        <select name="age" id="age">
+          <option value="Возраст"><img src="assets/images/calendar.svg" alt="calendar" width="32px" >Возраст</option>
+        </select>
+      </div>
+      <div class="col-4">
+        <select name="type" id="type">
+          <option value="Направленность"><img src="assets/images/type.svg" alt="type" >Направленность</option>
+        </select>
+      </div>
+      <div class="col-4">
+        <select name="forma" id="forma">
+          <option value="Форма обучения"><span class="course-option"><img src="assets/images/forma.svg" alt="forma" >Форма обучения</span></option>
+        </select>
+      </div>
+      </form>
+    </div>
+  </section>
  </div>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">

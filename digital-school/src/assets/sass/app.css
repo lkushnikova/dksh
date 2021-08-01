@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.4;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.logo-figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-style: normal;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-panel figcaption {
+  color: #FBFBFB;
+  font-weight: 500;
+  font-size: 12.5px;
+  line-height: 15px;
+  padding-left: 0.5rem;
+}
+
+.top-panel {
+  background-color: #8CC754;
+  padding: 30px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #FBFBFB;
+}
+
+.top-panel a {
+  color: #FBFBFB;
+}
+
+ul.for-horizontal-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-panel-contact p, .top-panel-about p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FBFBFB;
+}
+
+.top-panel-about p {
+  font-size: 12.5px;
+}
+
+figcaption.banner-logo {
+  font-size: 50px;
+  color: #DB538C;
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 61px;
+  padding-left: 2rem;
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+a.banner-sidemenu-link {
+  display: block;
+  padding: 1rem 1.5rem;
+  border: 2px solid #8CC754;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #8CC754;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: 12.5px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px;
+}
+
+a.banner-sidemenu-link--active {
+  background-color: #72B236;
+  color: #FBFBFB;
+  border-color: #72B236;
+}
+
+a.banner-sidemenu-link:hover {
+  background-color: #72B236;
+  color: #FBFBFB;
+  border-color: #72B236;
+}
+/*# sourceMappingURL=app.css.map */

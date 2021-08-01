@@ -166,7 +166,7 @@ gulp.task('watch', () => {
   const watch = [
     src_folder + '**/*.html',
    // src_folder + 'pug/**/*.pug',
-    src_assets_folder + 'sass/**/*.sass',
+    src_assets_folder + 'sass/**/*.scss',
     src_assets_folder + 'scss/**/*.scss',
     src_assets_folder + 'less/**/*.less',
     src_assets_folder + 'stylus/**/*.styl',

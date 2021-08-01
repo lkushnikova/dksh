@@ -42,7 +42,7 @@ align-items: center;
 }
 .top-panel{
   background-color: $base-color;
-  padding:30px 15px;
+  padding:22px 15px 4px;
   display:flex;
   align-items: flex-start;
   color: $text-color--light;
@@ -57,14 +57,18 @@ ul.for-horizontal-list{
   align-items:center;
   
 }
+.social-icons{
+  margin-right:0.6rem;
+}
 .top-panel-contact p, .top-panel-about p{
   font-family: Montserrat;
 font-style: normal;
 font-weight: 500;
-font-size: $text-m;
+font-size: 16px;
 line-height: 20px;
 text-align: center;
 color: $text-color--light;
+margin-bottom:0.3rem;
 
 }
 .top-panel-about p{
@@ -83,17 +87,124 @@ padding-left:2rem;
 .banner{
   display: flex;
   justify-content:space-between;
+  margin-bottom:2.8rem;
 }
-.banner-sidemenu-link{
+a.banner-sidemenu-link{
   display:block;
-  padding:1rem;
+  padding:1rem 1.5rem;
   border:2px solid #8CC754;
   border-radius:10px;
   background-color:#fff;
   color:$base-color;
   text-align:center;
-  margin-bottom:0.5rem;
-  a{
-    font-size:$text-xs;
+  margin-bottom:1rem;  
+  font-size:$text-xs;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px;
+  &--active {
+    background-color:$base-color--dark;
+    color:#FBFBFB;
+    border-color:$base-color--dark;
   }
+  &:hover{
+    background-color:$base-color--dark;
+    color:#FBFBFB;
+    border-color:$base-color--dark;
+  }
+}
+.top-menu{
+  height: 50px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 8px rgba(70, 70, 70, 0.15);
+}
+.top-menu-list{
+  height:100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items:center;
+  &-item{
+    font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+display: flex;
+align-items: center;
+text-align: center;
+a{
+color: #272727;
+&:hover{
+  text-decoration:underline;
+  color:$base-color--dark;
+}
+}
+  }
+}
+.main-banner{
+  background-image: url('../../images/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height:500px;
+  display: flex;
+  align-items: center;
+  margin-bottom:2.8rem;
+  &-text{
+        margin-left:1rem;
+        font-family: Montserrat Alternates;
+        font-style: normal;
+        font-weight: bold;
+        color: #FFFFFF;
+        width:437px;
+        
+        p{
+          margin-bottom:0.2rem;
+          text-transform: lowercase;
+        }
+      &-small{
+        font-size:28px;
+        line-height:34px;
+      }
+      &-large{
+        font-size:36px;
+        line-height:44px;
+      }
+      &-a{
+        background: #FFFFFF;
+        border: 3px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 10px;
+        font-family: Montserrat;
+        width:270px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: $text-s;
+        line-height: 17px;
+        color: #DB538C;
+        padding:0.8rem;
+        margin-top:1rem;
+        &:hover{
+          background-color:#DB538C;
+          color:#FBFBFB;
+          border:#DB538C;
+        }
+      }
+  }
+}
+select{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: $text-m;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #464646;
+  
+}
+.course-option{
+  padding:1rem;
 }
