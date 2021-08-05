@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -45,7 +46,7 @@ a {
 
 .top-panel {
   background-color: #8CC754;
-  padding: 30px 15px;
+  padding: 22px 15px 4px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,6 +72,10 @@ ul.for-horizontal-list {
           align-items: center;
 }
 
+.social-icons {
+  margin-right: 0.6rem;
+}
+
 .top-panel-contact p, .top-panel-about p {
   font-family: Montserrat;
   font-style: normal;
@@ -79,6 +84,7 @@ ul.for-horizontal-list {
   line-height: 20px;
   text-align: center;
   color: #FBFBFB;
+  margin-bottom: 0.3rem;
 }
 
 .top-panel-about p {
@@ -103,6 +109,7 @@ figcaption.banner-logo {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 2.8rem;
 }
 
 a.banner-sidemenu-link {
@@ -113,7 +120,7 @@ a.banner-sidemenu-link {
   background-color: #fff;
   color: #8CC754;
   text-align: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   font-size: 12.5px;
   font-style: normal;
   font-weight: 500;
@@ -130,5 +137,207 @@ a.banner-sidemenu-link:hover {
   background-color: #72B236;
   color: #FBFBFB;
   border-color: #72B236;
+}
+
+.top-menu {
+  height: 50px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 8px rgba(70, 70, 70, 0.15);
+          box-shadow: 0px 2px 8px rgba(70, 70, 70, 0.15);
+}
+
+.top-menu-list {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-menu-list-item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.top-menu-list-item a {
+  color: #272727;
+}
+
+.top-menu-list-item a:hover {
+  text-decoration: underline;
+  color: #72B236;
+}
+
+.main-banner {
+  background-image: url("../../images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2.8rem;
+}
+
+.main-banner-text {
+  margin-left: 1rem;
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: bold;
+  color: #FFFFFF;
+  width: 437px;
+}
+
+.main-banner-text p {
+  margin-bottom: 0.2rem;
+  text-transform: lowercase;
+}
+
+.main-banner-text-small {
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.main-banner-text-large {
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.main-banner-text-a {
+  background: #FFFFFF;
+  border: 3px solid #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  font-family: Montserrat;
+  width: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #DB538C;
+  padding: 0.8rem;
+  margin-top: 1rem;
+}
+
+.main-banner-text-a:hover {
+  background-color: #DB538C;
+  color: #FBFBFB;
+  border: #DB538C;
+}
+
+/* Стилизация фильтров */
+.courses-filter-item-btn {
+  min-height: 50px;
+  background-color: #fff;
+  border: 1.5px solid #72B236;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+}
+
+.courses-filter-item-btn span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 48px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #464646;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.courses-filter-item-btn span img {
+  padding-right: 0.3rem;
+}
+
+.courses-filter-item-btn span:hover {
+  color: #72B236;
+}
+
+.courses-filter-item-btn::after {
+  content: url("../../images/arrow-down.svg");
+  position: absolute;
+  right: 0.5rem;
+  top: 0.6rem;
+  color: #72B236;
+}
+
+.courses-filter-item-dpdwn {
+  -webkit-box-shadow: 0px 2px 8px rgba(70, 70, 70, 0.15);
+          box-shadow: 0px 2px 8px rgba(70, 70, 70, 0.15);
+  padding: 1.5rem 0;
+  width: 99%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: -0.5rem;
+  display: none;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+.courses-filter-item-dpdwn p {
+  width: 100%;
+  padding: 0.5rem;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  cursor: pointer;
+}
+
+.courses-filter-item-dpdwn p:hover {
+  background-color: #72B236;
+  color: #FBFBFB;
+}
+
+.courses-list {
+  margin: 2.8rem 0;
+}
+
+/* Карточка курса */
+.courses-list-item {
+  border: 1px solid #ADADAD;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  height: 233px;
 }
 /*# sourceMappingURL=index.css.map */

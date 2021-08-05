@@ -71,25 +71,464 @@
   </section>
   <section class="courses">
     <div class="row flex courses-filter">
-      <form action="#" method="GET">
-      <div class="col-4">
-        <select name="age" id="age">
-          <option value="Возраст"><img src="assets/images/calendar.svg" alt="calendar" width="32px" >Возраст</option>
-        </select>
+    <div class="col-md-4 courses-filter-item">
+      <button name="age" class="courses-filter-item-btn" id="for-course-age">
+        <span><img src="assets/images/calendar.svg" alt="age">Возраст</span>
+      </button>
+      <div class="courses-filter-item-dpdwn" id="course-age">
+        <p id="course-age-7">от 7 до 12 лет</p>
+        <p id="course-age-13">от 13 до 17 лет</p>
+        <p id="course-age-17">старше 17 лет</p>
       </div>
-      <div class="col-4">
-        <select name="type" id="type">
-          <option value="Направленность"><img src="assets/images/type.svg" alt="type" >Направленность</option>
-        </select>
+    </div>
+    <div class="col-md-4 courses-filter-item">
+      <button name="age" id="for-course-type" class="courses-filter-item-btn">
+        <span><img src="assets/images/type.svg" alt="type">Направленность</span>
+      </button>
+      <div class="courses-filter-item-dpdwn" id="course-type">
+        <p id="course-type-art">творческая</p>
+        <p id="course-type-tech">техническая</p>
       </div>
-      <div class="col-4">
-        <select name="forma" id="forma">
-          <option value="Форма обучения"><span class="course-option"><img src="assets/images/forma.svg" alt="forma" >Форма обучения</span></option>
-        </select>
+    </div>
+    <div class="col-md-4 courses-filter-item">
+      <button name="age" id="for-course-forma" class="courses-filter-item-btn">
+        <span><img src="assets/images/forma.svg" alt="forma">Форма обучения</span>
+      </button>
+      <div class="courses-filter-item-dpdwn" id="course-forma">
+        <p id="course-forma-offline">очно</p>
+        <p id="course-forma-online">онлайн</p>
+        <p id="course-forma-blended">дистанционно</p>
       </div>
-      </form>
+    </div>
+    </div>
+    <div class="row courses-list">
+      <div class="col-md-2 courses-list-item">      
+          <div class="courses-list-item-img">
+          </div>
+          <h2>Живопись и цифровая графика</h2>
+          <div class="row  gx-4">
+            <div class="col-md-6">
+              <p><img src="assets/images/calendar.svg" alt="calendar"> от 7 до 12 лет</p>
+            </div>
+            <div class="col-md-6">
+              <p><img src="assets/images/type.svg" alt="type">Творческая</p>
+            </div>
+          </div>
+          <div class="row  gx-4">
+            <div class="col-md-6">
+              <a href="#" class="courses-list-item-apply">Записаться</a>
+            </div>
+            <div class=" col-md-6">
+              <a href="#" class="courses-list-item-a">Подробнее</a>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-2 courses-list-item">      
+        <div class="courses-list-item-img" style="background-image: url('assets/images/bloger.png');">
+        </div>
+        <h2>Я блогер</h2>
+        <div class="row  gx-4">
+          <div class="col-md-6">
+            <p><img src="assets/images/calendar.svg" alt="calendar"> от 7 до 12 лет</p>
+          </div>
+          <div class="col-md-6">
+            <p><img src="assets/images/type.svg" alt="type">Творческая</p>
+          </div>
+        </div>
+        <div class="row  gx-4">
+          <div class="col-md-6">
+            <a href="#" class="courses-list-item-apply">Записаться</a>
+          </div>
+          <div class=" col-md-6">
+            <a href="#" class="courses-list-item-a">Подробнее</a>
+          </div>
+        </div>
+    </div>
+    <div class="col-md-2 courses-list-item">      
+      <div class="courses-list-item-img" style="background-image: url('assets/images/oit.png');">
+      </div>
+      <h2>Основы информационных 
+        технологий</h2>
+      <div class="row  gx-4">
+        <div class="col-md-6">
+          <p><img src="assets/images/calendar.svg" alt="calendar"> от 13 до 17 лет</p>
+        </div>
+        <div class="col-md-6">
+          <p><img src="assets/images/type.svg" alt="type">Техническая</p>
+        </div>
+      </div>
+      <div class="row  gx-4">
+        <div class="col-md-6">
+          <a href="#" class="courses-list-item-apply">Записаться</a>
+        </div>
+        <div class=" col-md-6">
+          <a href="#" class="courses-list-item-a">Подробнее</a>
+        </div>
+      </div>
+  </div>
+  <div class="col-md-2 courses-list-item">      
+    <div class="courses-list-item-img" style="background-image: url('assets/images/python.png');">
+    </div>
+    <h2>Основы программирования 
+      на языке Python</h2>
+    <div class="row  gx-4">
+      <div class="col-md-6">
+        <p><img src="assets/images/calendar.svg" alt="calendar"> от 13 до 17 лет</p>
+      </div>
+      <div class="col-md-6">
+        <p><img src="assets/images/type.svg" alt="type">Техническая</p>
+      </div>
+    </div>
+    <div class="row  gx-4">
+      <div class="col-md-6">
+        <a href="#" class="courses-list-item-apply">Записаться</a>
+      </div>
+      <div class=" col-md-6">
+        <a href="#" class="courses-list-item-a">Подробнее</a>
+      </div>
+    </div>
+</div>
+<div class="col-md-2 courses-list-item">      
+  <div class="courses-list-item-img" style="background-image: url('assets/images/lego.png');">
+  </div>
+  <h2>Программирование
+    LEGO-роботов</h2>
+  <div class="row  gx-4">
+    <div class="col-md-6">
+      <p><img src="assets/images/calendar.svg" alt="calendar"> старше 17 лет</p>
+    </div>
+    <div class="col-md-6">
+      <p><img src="assets/images/type.svg" alt="type">Техническая</p>
+    </div>
+  </div>
+  <div class="row  gx-4">
+    <div class="col-md-6">
+      <a href="#" class="courses-list-item-apply">Записаться</a>
+    </div>
+    <div class=" col-md-6">
+      <a href="#" class="courses-list-item-a">Подробнее</a>
+    </div>
+  </div>
+</div>
+<div class="col-md-2 courses-list-item">      
+  <div class="courses-list-item-img" style="background-image: url('assets/images/3d1.png');">
+  </div>
+  <h2>Основы программирования в программе 3D’s Max (1 год)</h2>
+  <div class="row  gx-4">
+    <div class="col-md-6">
+      <p><img src="assets/images/calendar.svg" alt="calendar"> от 7 до 12 лет</p>
+    </div>
+    <div class="col-md-6">
+      <p><img src="assets/images/type.svg" alt="type">Техническая</p>
+    </div>
+  </div>
+  <div class="row  gx-4">
+    <div class="col-md-6">
+      <a href="#" class="courses-list-item-apply">Записаться</a>
+    </div>
+    <div class=" col-md-6">
+      <a href="#" class="courses-list-item-a">Подробнее</a>
+    </div>
+  </div>
+</div>
+<div class="col-md-2 courses-list-item">      
+  <div class="courses-list-item-img" style="background-image: url('assets/images/games1.png');">
+  </div>
+  <h2>Разработка компьютерных 
+    игр (1 год)</h2>
+  <div class="row  gx-4">
+    <div class="col-md-6">
+      <p><img src="assets/images/calendar.svg" alt="calendar"> от 7 до 12 лет</p>
+    </div>
+    <div class="col-md-6">
+      <p><img src="assets/images/type.svg" alt="type">Техническая</p>
+    </div>
+  </div>
+  <div class="row  gx-4">
+    <div class="col-md-6">
+      <a href="#" class="courses-list-item-apply">Записаться</a>
+    </div>
+    <div class=" col-md-6">
+      <a href="#" class="courses-list-item-a">Подробнее</a>
+    </div>
+  </div>
+</div>
+<div class="col-md-2 courses-list-item">      
+  <div class="courses-list-item-img" style="background-image: url('assets/images/cartoons.png');">
+  </div>
+  <h2>Основы компьютерной графики и мультипликации</h2>
+  <div class="row  gx-4">
+    <div class="col-md-6">
+      <p><img src="assets/images/calendar.svg" alt="calendar"> от 7 до 12 лет</p>
+    </div>
+    <div class="col-md-6">
+      <p><img src="assets/images/type.svg" alt="type">Техническая</p>
+    </div>
+  </div>
+  <div class="row  gx-4">
+    <div class="col-md-6">
+      <a href="#" class="courses-list-item-apply">Записаться</a>
+    </div>
+    <div class=" col-md-6">
+      <a href="#" class="courses-list-item-a">Подробнее</a>
+    </div>
+  </div>
+</div>
+<div class="col-md-2 courses-list-item">      
+  <div class="courses-list-item-img" style="background-image: url('assets/images/3d2.png');">
+  </div>
+  <h2>Основы программирования в программе 3D’s Max (2 год)</h2>
+  <div class="row  gx-4">
+    <div class="col-md-6">
+      <p><img src="assets/images/calendar.svg" alt="calendar"> от 7 до 12 лет</p>
+    </div>
+    <div class="col-md-6">
+      <p><img src="assets/images/type.svg" alt="type">Техническая</p>
+    </div>
+  </div>
+  <div class="row  gx-4">
+    <div class="col-md-6">
+      <a href="#" class="courses-list-item-apply">Записаться</a>
+    </div>
+    <div class=" col-md-6">
+      <a href="#" class="courses-list-item-a">Подробнее</a>
+    </div>
+  </div>
+</div>
+<div class="col-md-2 courses-list-item">      
+  <div class="courses-list-item-img" style="background-image: url('assets/images/games2.png');">
+  </div>
+  <h2>Разработка компьютерных
+    игр (2 год)</h2>
+  <div class="row  gx-4">
+    <div class="col-md-6">
+      <p><img src="assets/images/calendar.svg" alt="calendar"> от 7 до 12 лет</p>
+    </div>
+    <div class="col-md-6">
+      <p><img src="assets/images/type.svg" alt="type">Техническая</p>
+    </div>
+  </div>
+  <div class="row  gx-4">
+    <div class="col-md-6">
+      <a href="#" class="courses-list-item-apply">Записаться</a>
+    </div>
+    <div class=" col-md-6">
+      <a href="#" class="courses-list-item-a">Подробнее</a>
+    </div>
+  </div>
+</div>
+<div class="col-md-2 courses-list-item">      
+  <div class="courses-list-item-img" style="background-image: url('assets/images/mobile.png');">
+  </div>
+  <h2>Разработка мобильных 
+    приложений</h2>
+  <div class="row  gx-4">
+    <div class="col-md-6">
+      <p><img src="assets/images/calendar.svg" alt="calendar"> от 7 до 12 лет</p>
+    </div>
+    <div class="col-md-6">
+      <p><img src="assets/images/type.svg" alt="type">Техническая</p>
+    </div>
+  </div>
+  <div class="row  gx-4">
+    <div class="col-md-6">
+      <a href="#" class="courses-list-item-apply">Записаться</a>
+    </div>
+    <div class=" col-md-6">
+      <a href="#" class="courses-list-item-a">Подробнее</a>
+    </div>
+  </div>
+</div>
+<div class="col-md-2 courses-list-item">      
+  <div class="courses-list-item-img" style="background-image: url('assets/images/web.png');">
+  </div>
+  <h2>Технологии веб-дизайна</h2>
+  <div class="row  gx-4">
+    <div class="col-md-6">
+      <p><img src="assets/images/calendar.svg" alt="calendar"> от 7 до 12 лет</p>
+    </div>
+    <div class="col-md-6">
+      <p><img src="assets/images/type.svg" alt="type">Техническая</p>
+    </div>
+  </div>
+  <div class="row  gx-4">
+    <div class="col-md-6">
+      <a href="#" class="courses-list-item-apply">Записаться</a>
+    </div>
+    <div class=" col-md-6">
+      <a href="#" class="courses-list-item-a">Подробнее</a>
+    </div>
+  </div>
+</div>
+<div class="col-md-2 courses-list-item">      
+  <div class="courses-list-item-img" style="background-image: url('assets/images/art-school.png');">
+  </div>
+  <h2>Школа искусств</h2>
+  <div class="row  gx-4">
+    <div class="col-md-6">
+      <p><img src="assets/images/calendar.svg" alt="calendar"> от 7 до 12 лет</p>
+    </div>
+    <div class="col-md-6">
+      <p><img src="assets/images/type.svg" alt="type">Техническая</p>
+    </div>
+  </div>
+  <div class="row  gx-4">
+    <div class="col-md-6">
+      <a href="#" class="courses-list-item-apply">Записаться</a>
+    </div>
+    <div class=" col-md-6">
+      <a href="#" class="courses-list-item-a">Подробнее</a>
+    </div>
+  </div>
+</div>
+<div class="col-md-2 courses-list-item">      
+  <div class="courses-list-item-img" style="background-image: url('assets/images/android.png');">
+  </div>
+  <h2>Программирование 
+    Android-роботов</h2>
+  <div class="row  gx-4">
+    <div class="col-md-6">
+      <p><img src="assets/images/calendar.svg" alt="calendar"> от 7 до 12 лет</p>
+    </div>
+    <div class="col-md-6">
+      <p><img src="assets/images/type.svg" alt="type">Техническая</p>
+    </div>
+  </div>
+  <div class="row  gx-4">
+    <div class="col-md-6">
+      <a href="#" class="courses-list-item-apply">Записаться</a>
+    </div>
+    <div class=" col-md-6">
+      <a href="#" class="courses-list-item-a">Подробнее</a>
+    </div>
+  </div>
+</div>
+<div class="col-md-2 courses-list-item">      
+  <div class="courses-list-item-img" style="background-image: url('assets/images/scratch.png');">
+  </div>
+  <h2>Разработка компьютерных игр
+    в среде Scratch</h2>
+  <div class="row  gx-4">
+    <div class="col-md-6">
+      <p><img src="assets/images/calendar.svg" alt="calendar"> от 7 до 12 лет</p>
+    </div>
+    <div class="col-md-6">
+      <p><img src="assets/images/type.svg" alt="type">Техническая</p>
+    </div>
+  </div>
+  <div class="row  gx-4">
+    <div class="col-md-6">
+      <a href="#" class="courses-list-item-apply">Записаться</a>
+    </div>
+    <div class=" col-md-6">
+      <a href="#" class="courses-list-item-a">Подробнее</a>
+    </div>
+  </div>
+</div>
     </div>
   </section>
+  <section class="news">
+    <div class="row section-header">
+      <h2>Новости</h2>
+    </div>
+    <div class="row news-list">
+      <div class="col-md-6 main-news">
+        <div class="main-news-img"></div>
+        <h3>Ученица Детской школы искусств ИнПИТ победила в международном творческом конкурсе</h3>
+        <div class="main-news-text">
+          <p>Александра Сулима, учащаяся Детской школы искусств ИнПИТ, заняла первое место в международном конкурсе-фестивале детско-молодежного творчества «Талантливая планета».</p>
+        <div class="row main-news-bottom">
+          <div class="col-md-1">
+            <a href="#" class="main-news-a">Подробнее</a>
+          </div>
+          <div class="div col-md-1 offset-md-9">
+            <span class="main-news-date">24.10.2020г.</span>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-md-6 all-news">
+        <div class="all-news-item">
+          <h3>Победители Саратовского тура конкурса «Цифровой ветер» приглашаются на церемонию награждения</h3>
+          <div class="all-news-text">
+            <p>Подведены итоги Саратовского регионального тура Международного конкурса компьютерных работ среди детей, юношества и студенческой молодежи «Цифровой ветер-2021».</p>
+          </div>
+          <div class="row all-news-item-bottom">
+            <div class="col-md-1">
+              <a href="#" class="all-news-item-a">Подробнее</a>
+            </div>
+            <div class="div col-md-1 offset-md-9">
+              <span class="all-news-item-date">24.10.2020г.</span>
+            </div>
+          </div>
+        </div>
+        <div class="all-news-item">
+          <h3>Выпускник Детской компьютерной школы ИнПИТ, одиннадцатиклассник Тимофей Еремин вошел в число победителей Всероссийской научно-исследовательской конференции «В науку первые шаги».</h3>
+          <div class="all-news-text">
+            <p>Проект Тимофея «Фигуры Хладни» занял второе место в секции «Физика».</p>
+          </div>
+          <div class="row all-news-item-bottom">
+            <div class="col-md-1">
+              <a href="#" class="all-news-item-a">Подробнее</a>
+            </div>
+            <div class="div col-md-1 offset-md-9">
+              <span class="all-news-item-date">24.10.2020г.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="challenge">
+    <div class="row section-header">
+      <h2>Конкурсы</h2>
+    </div>
+    <div class="row all-challenge">
+      <div class="col-md-3 challenge-item">
+        <div class="challenge-item-img"></div>
+        <h3>Цифровой ветер 2021</h3>
+        <div class="challenge-item-text">
+          <p>Конкурс «Цифровой ветер» ежегодно проводится Институтом прикладных информационных технологий и коммуникаций (ИнПИТ) Саратовского государственного технического университета имени Гагарина Ю.А.. Цели конкурса - привлечение внимания школьников и студентов к современным информационным технологиям, приобретение конкурсантами практических навыков работы с программным обеспечением. Возраст участников - от 7 до 25 лет.</p>
+        </div>
+        <p><a href="#" class="challenge-item-a">Подробнее</a></p>
+      </div>
+      <div class="col-md-3 challenge-item">
+        <div class="challenge-item-img" style="background-image: url('assets/images/ds.jpg');"></div>
+        <h3>Цифровой старт 2021</h3>
+        <div class="challenge-item-text">
+          <p>Конкурс «Цифровой старт» ежегодно проводится Институтом прикладных информационных технологий и коммуникаций (ИнПИТ) Саратовского государственного технического университета имени Гагарина Ю.А. Возраст участников - от 7 до 17 лет.</p>
+        </div>
+        <p><a href="#" class="challenge-item-a">Подробнее</a></p>
+      </div>
+      <div class="col-md-3 challenge-item">
+        <div class="challenge-item-img" style="background-image: url('assets/images/ds.jpg');"></div>
+        <h3>Цифровой прорыв 2021</h3>
+        <div class="challenge-item-text">
+          <p>Конкурс «Цифровой прорыв» ежегодно проводится Институтом прикладных информационных технологий и коммуникаций (ИнПИТ) Саратовского государственного технического университета имени Гагарина Ю.А. Возраст участников - от 7 до 17 лет.</p>
+        </div>
+        <p><a href="#" class="challenge-item-a">Подробнее</a></p>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+<div class="row footer-contact">
+  <div class="col-md-6 footer-contact-form">
+    <h2>Остались вопросы? Задайте их нам</h2>
+    <form action="#" class="footer-form">
+      <div class="row">
+        <div class="col-12">
+          <input type="text" name="fio" id="fio" required placeholder="Имя*">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <input type="tel" name="phone" id="phone" required placeholder="Телефон">
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+  </footer>
  </div>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
