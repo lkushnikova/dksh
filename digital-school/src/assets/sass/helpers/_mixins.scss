@@ -1,0 +1,10 @@
+@mixin bg-tutor {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+@mixin no-gutter {
+  padding-left: 0;
+  padding-right: 0;
+}
