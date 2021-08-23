@@ -802,10 +802,16 @@ social-icons:last-child {
 
 }
 
-.text h5 {
+.text h5,
+.programm h5 {
   font-weight: 600;
   font-size: 24px;
   line-height: 29px;
+}
+
+.reasons {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
 }
 
 .reason-bg {
@@ -826,4 +832,26 @@ social-icons:last-child {
   right: 0;
   bottom: 0;
   width: 420px;
+}
+
+.reason-bg-violet {
+  @include reason-bg;
+  left: 1rem;
+  top: 2rem;
+}
+
+.reason-bg-orange {
+  @include reason-bg;
+  bottom: 2rem;
+}
+
+.programm {
+  background-color: #fff;
+  position: relative;
+
+  &-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
 }
