@@ -1,8 +1,37 @@
 .bg-abitur {
   background-image: url('../../images/bg-abitur.jpeg');
-  background-size: contain;
+  background-size: cover;
 }
 
 section {
   overflow: hidden;
+}
+.title-text{
+font-family: Montserrat Alternates;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 59px;
+color:#fff;
+}
+.title-subtext{
+  font-weight: bold;
+font-size: 18px;
+line-height: 22px;
+color:#fff;
+}
+.oit-bg{
+  background-image: url('../../images/oit-bg.svg');
+  background-size: contain;
+  min-height:400px;
+  margin-bottom: 20px;
+}
+.course-text{
+  padding-left:2.8rem;
+  font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+color: $text-color--dark;
+margin-bottom:2.8rem;
 }
