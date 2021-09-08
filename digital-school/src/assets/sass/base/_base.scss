@@ -176,9 +176,9 @@ a.banner-sidemenu-link {
 }
 
 .main-banner {
-  background-image: url('../../images/banner.jpg');
+  background-image: url('../../images/banner.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   min-height: 500px;
   display: flex;
   align-items: center;
