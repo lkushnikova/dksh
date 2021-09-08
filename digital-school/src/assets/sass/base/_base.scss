@@ -144,21 +144,21 @@ a.banner-sidemenu-link {
 }
 
 .top-menu {
-  height: 50px;
+  height: 73px;
   background: #FFFFFF;
-  box-shadow: 0px 2px 8px rgba(70, 70, 70, 0.15);
+  //box-shadow: 0px 2px 8px rgba(70, 70, 70, 0.15);
 }
 
 .top-menu-list {
   height: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 
   &-item {
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 17px;
     display: flex;
     align-items: center;
@@ -321,34 +321,35 @@ a.banner-sidemenu-link {
 
 /* Карточка курса */
 .courses-list-item-img {
-  background-image: url('../../images/art-grafics.png');
+  background-image: url('../../images/art-grafics.svg');
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 132px;
+  background-size: contain;
+  height: 162px;
 }
 
 .courses-list-item {
   border: 1px solid #ADADAD;
   box-sizing: border-box;
   border-radius: 10px;
-  height: 233px;
+  height: 293px;
   padding: 0px;
   overflow: hidden;
   font-style: normal;
   color: $text-color;
   font-weight: 500;
-  margin-right: 1rem;
   margin-bottom: 1rem;
+  width:292px;
+  max-width:292px;
 
   h2 {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 14px;
+    line-height: 14px;
     text-align: center;
-    height: 35px;
+    height: 44px;
     overflow: hidden;
     padding-top: 0.3rem;
     margin-bottom: 0.4rem;
@@ -356,8 +357,9 @@ a.banner-sidemenu-link {
   }
 
   p {
-    font-size: 10px;
-    line-height: 12px;
+    font-weight: 500;
+font-size: 12px;
+line-height: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -369,8 +371,9 @@ a.banner-sidemenu-link {
   }
 
   .courses-list-item-apply {
-    font-size: 10px;
-    line-height: 12px;
+    font-weight: 500;
+font-size: 12px;
+line-height: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -379,6 +382,7 @@ a.banner-sidemenu-link {
     color: $base-color--dark;
     padding: 0.2rem;
     margin-left: 0.2rem;
+    height:30px;
 
     &:hover {
       background-color: $base-color--dark;
@@ -387,14 +391,15 @@ a.banner-sidemenu-link {
   }
 
   a.courses-list-item-a {
-    font-size: 9px;
-    line-height: 11px;
+    font-weight: normal;
+font-size: 12px;
+line-height: 15px;
     display: flex;
     align-items: center;
     text-decoration-line: underline;
     color: #72B236;
-    height: 24px;
-    justify-content: center;
+    height: 30px;
+    justify-content: flex-start;
 
     &:hover {
       color: $accent-color;
@@ -577,9 +582,10 @@ a.banner-sidemenu-link {
     &-img {
       background-image: url('../../images/dw.jpg');
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
       background-position: center center;
       height: 90px;
+      width:100%;
       margin-bottom: 2rem;
     }
   }
@@ -1103,4 +1109,12 @@ color:$text-color--dark;
 }
 .reviews{
   margin:3.8rem 0rem;
+}
+a.block-a{
+  color:$text-color;
+  text-decoration: none;
+  &:hover{
+    color:#a358cb;
+    transition: all 1s ease;
+  }
 }
