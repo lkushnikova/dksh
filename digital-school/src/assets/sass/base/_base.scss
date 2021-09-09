@@ -337,22 +337,27 @@ a.banner-sidemenu-link {
   font-style: normal;
   color: $text-color;
   font-weight: 500;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
+  padding-bottom:21px;
   width:292px;
   max-width:292px;
-
-  h2 {
+   perspective: 500px;
+    h2 {
     display: flex;
     align-items: center;
     justify-content: center;
 
     font-size: 14px;
-    line-height: 14px;
+    line-height: 17px;
     text-align: center;
     height: 44px;
     overflow: hidden;
     padding-top: 0.3rem;
     margin-bottom: 0.4rem;
+    &:hover{
+   transition: all 0.5s ease;
+      transform: rotateY(-10deg);
+    }
 
   }
 
@@ -364,9 +369,17 @@ line-height: 15px;
     align-items: center;
     justify-content: center;
     margin-bottom: 0.5rem;
+    &:hover{
+      transition: all 0.5s ease;
+         transform: rotateY(-10deg);
+       }
 
     img {
       padding-right: 0.2rem;
+      &:hover{
+        transition: all 0.5s ease;
+           transform: rotateY(-10deg);
+         }
     }
   }
 
