@@ -12,12 +12,14 @@
 </head>
 
 <body>
-  <div class="container">
-    <section class="top-panel row">
+  <div class="container-fluid">
+    <section class="top-panel">
+      <div class="container">
+        <div class="row">
       <div class="col-md-4 sstu-logo">
         <a href="https://sstu.ru">
           <figure class="logo-figure">
-            <img src="assets/images/logo-sstu.svg" alt="sstu-logo">
+            <img src="http://www.inpit.sstu.ru/imgs/sstu.png" alt="sstu-logo">
             <figcaption>Саратовский государственный технический университет имени Гагарина Ю.А.</figcaption>
           </figure>
         </a>
@@ -33,19 +35,22 @@
           <li><a href="https://facebook.com"><img src="assets/images/fb.svg" class="social-icons" alt="fb"></a></li>
         </ul>
       </div>
-      <div class="col-md-3 top-panel-about">
+        <div class="col-md-3 top-panel-about">
         <p><a href="https://www.sstu.ru/sveden/" target="_blank" alt="Сведения об образовательной организации">Сведения
             об образовательной организации</a></p>
       </div>
       <div class="col-md-1 justify-content-end">
         <a href="#"><img src="assets/images/glasses.svg" alt="glasses"></a>
       </div>
+        </div>
+      </div>
+ 
     </section>
-    <section class="banner pt-5 pl-2">
+    <section class="banner pt-5 pl-2 container">
       <div class="col-md-6 logo">
         <a href="index.html">
           <figure class="logo-figure ">
-            <img src="assets/images/logo.png" alt="logo">
+            <img src="assets/images/logo.svg" alt="logo">
             <figcaption class="banner-logo">Детская компьютерная школа</figcaption>
           </figure>
         </a>
@@ -58,9 +63,10 @@
       </div>
     </section>
     <nav class="top-menu">
-      <ul class="top-menu-list list-unstyled ">
-        <li class="top-menu-list-item "><a href="about.html">О нас</a></li>
-        <li class="top-menu-list-item active"><a href="courses.html">Курсы</a></li>
+      <ul class="top-menu-list list-unstyled container">
+        <li class="top-menu-list-item"><a href="index.html" >Главная</a></li>
+        <li class="top-menu-list-item"><a href="about.html">О нас</a></li>
+        <li class="top-menu-list-item"><a href="courses.html" class="active">Курсы</a></li>
         <li class="top-menu-list-item"><a href="courses/ege.html">Подготовка к ЕГЭ</a></li>
         <li class="top-menu-list-item"><a href="abitur.html">Абитуриенту</a></li>
         <li class="top-menu-list-item"><a href="reviews.html">Отзывы</a></li>
@@ -68,21 +74,22 @@
       </ul>
     </nav>
     <section class="main-banner">
-      <div class="main-banner-text">
-        <p class="main-banner-text-small">Курсы</p>
-        <p class="main-banner-text-large">Детской компьютерной школы</p>
-      </div>
+      <div class="container">
+        <div class="main-banner-text">
+          <p class="main-banner-text-large">Наши курсы</p>
+        </div>
+      </div>   
     </section>
-    <section class="courses">
+    <section class="courses container">
       <div class="row flex courses-filter">
         <div class="col-md-4 courses-filter-item">
           <button name="age" class="courses-filter-item-btn" id="for-course-age">
             <span><img src="assets/images/calendar.svg" alt="age">Возраст</span>
           </button>
-          <div class="courses-filter-item-dpdwn" id="course-age">
-            <p id="course-age-7">от 7 до 12 лет</p>
-            <p id="course-age-13">от 13 до 17 лет</p>
-            <p id="course-age-17">старше 17 лет</p>
+          <div id="course-age" class="courses-filter-item-dpdwn" >
+            <p id="for-course-age-7">от 7 до 12 лет</p>
+            <p id="for-course-age-13">от 13 до 17 лет</p>
+            <p id="for-course-age-17">старше 17 лет</p>
           </div>
         </div>
         <div class="col-md-4 courses-filter-item">
@@ -106,11 +113,11 @@
         </div>
       </div>
       <div class="row courses-list">
-        <div class="col-md-2 courses-list-item">
+        <div class="courses-list-item course-age-7">
           <div class="courses-list-item-img">
           </div>
-          <h2>Живопись и цифровая графика</h2>
-          <div class="row  gx-4">
+          <h2 style="padding:0.5rem;">Живопись и цифровая графика</h2>
+          <div class="row" style="padding:0.2rem 0.75rem;">
             <div class="col-md-6">
               <p><img src="assets/images/calendar.svg" alt="calendar"> от 7 до 12 лет</p>
             </div>
@@ -118,20 +125,22 @@
               <p><img src="assets/images/type.svg" alt="type">Творческая</p>
             </div>
           </div>
-          <div class="row  gx-4">
-            <div class="col-md-6">
-              <a href="#" class="courses-list-item-apply">Записаться</a>
-            </div>
+          
+          <div class="row" style="padding:0rem 1.5rem;">
             <div class=" col-md-6">
               <a href="#" class="courses-list-item-a">Подробнее</a>
             </div>
+            <div class="col-md-6">
+              <a href="#" class="courses-list-item-apply">Записаться</a>
+            </div>
+         
           </div>
         </div>
-        <div class="col-md-2 courses-list-item">
-          <div class="courses-list-item-img" style="background-image: url('assets/images/bloger.png');">
+        <div class="courses-list-item course-age-7">
+          <div class="courses-list-item-img" style="background-image: url('assets/images/3d1.svg');">
           </div>
-          <h2>Я блогер</h2>
-          <div class="row  gx-4">
+          <h2 style="padding:0.5rem;">Основы программирования в программе 3D’s Max (1 год)</h2>
+          <div class="row" style="padding:0rem 0.75rem;">
             <div class="col-md-6">
               <p><img src="assets/images/calendar.svg" alt="calendar"> от 7 до 12 лет</p>
             </div>
@@ -139,20 +148,22 @@
               <p><img src="assets/images/type.svg" alt="type">Творческая</p>
             </div>
           </div>
-          <div class="row  gx-4">
-            <div class="col-md-6">
-              <a href="#" class="courses-list-item-apply">Записаться</a>
-            </div>
+          
+          <div class="row" style="padding:0rem 1.5rem;">
             <div class=" col-md-6">
               <a href="#" class="courses-list-item-a">Подробнее</a>
             </div>
+            <div class="col-md-6">
+              <a href="#" class="courses-list-item-apply">Записаться</a>
+            </div>
+         
           </div>
         </div>
-        <div class="col-md-2 courses-list-item">
-          <div class="courses-list-item-img" style="background-image: url('assets/images/oit.png');">
+        <div class="courses-list-item course-age-13">
+          <div class="courses-list-item-img" style="background-image: url('assets/images/oit.svg');">
           </div>
-          <h2>Школа программирования</h2>
-          <div class="row  gx-4">
+          <h2 style="padding:0.5rem;">Основы информационных технологий</h2>
+          <div class="row" style="padding:0rem 0.75rem;">
             <div class="col-md-6">
               <p><img src="assets/images/calendar.svg" alt="calendar"> от 13 до 17 лет</p>
             </div>
@@ -160,21 +171,24 @@
               <p><img src="assets/images/type.svg" alt="type">Техническая</p>
             </div>
           </div>
-          <div class="row  gx-4">
-            <div class="col-md-6">
-              <a href="#" class="courses-list-item-apply">Записаться</a>
-            </div>
+          
+          <div class="row" style="padding:0rem 1.5rem;">
             <div class=" col-md-6">
-              <a href="#" class="courses-list-item-a">Подробнее</a>
+              <a href="courses/oit.html" class="courses-list-item-a">Подробнее</a>
             </div>
+            <div class="col-md-6">
+              <a href="courses/oit.html" class="courses-list-item-apply">Записаться</a>
+            </div>
+         
           </div>
         </div>
-        <div class="col-md-2 courses-list-item">
-          <div class="courses-list-item-img" style="background-image: url('assets/images/python.png');">
+        <div class="courses-list-item course-age-13">
+          <a href="courses/oit.html" class="block-a">
+          <div class="courses-list-item-img" style="background-image: url('assets/images/python.svg');">
           </div>
-          <h2>Основы программирования
-            на языке Python</h2>
-          <div class="row  gx-4">
+          <h2 style="padding:0.5rem;">Основы программирования на Python</h2>
+        </a>
+          <div class="row" style="padding:0rem 0.75rem;">
             <div class="col-md-6">
               <p><img src="assets/images/calendar.svg" alt="calendar"> от 13 до 17 лет</p>
             </div>
@@ -182,256 +196,118 @@
               <p><img src="assets/images/type.svg" alt="type">Техническая</p>
             </div>
           </div>
-          <div class="row  gx-4">
-            <div class="col-md-6">
-              <a href="#" class="courses-list-item-apply">Записаться</a>
-            </div>
+          
+          <div class="row" style="padding:0rem 1.5rem;">
             <div class=" col-md-6">
-              <a href="#" class="courses-list-item-a">Подробнее</a>
+              <a href="courses/oit.html" class="courses-list-item-a">Подробнее</a>
             </div>
+            <div class="col-md-6">
+              <a href="courses/oit.html" class="courses-list-item-apply">Записаться</a>
+            </div>
+         
           </div>
+        
         </div>
-        <div class="col-md-2 courses-list-item">
-          <div class="courses-list-item-img" style="background-image: url('assets/images/lego.png');">
+        <div class="courses-list-item course-age-7">
+          <div class="courses-list-item-img">
           </div>
-          <h2>Программирование
-            LEGO-роботов</h2>
-          <div class="row  gx-4">
-            <div class="col-md-6">
-              <p><img src="assets/images/calendar.svg" alt="calendar"> старше 17 лет</p>
-            </div>
-            <div class="col-md-6">
-              <p><img src="assets/images/type.svg" alt="type">Техническая</p>
-            </div>
-          </div>
-          <div class="row  gx-4">
-            <div class="col-md-6">
-              <a href="#" class="courses-list-item-apply">Записаться</a>
-            </div>
-            <div class=" col-md-6">
-              <a href="#" class="courses-list-item-a">Подробнее</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2 courses-list-item">
-          <div class="courses-list-item-img" style="background-image: url('assets/images/3d1.png');">
-          </div>
-          <h2>Основы программирования в программе 3D’s Max (1 год)</h2>
-          <div class="row  gx-4">
+          <h2 style="padding:0.5rem;">Живопись и цифровая графика</h2>
+          <div class="row" style="padding:0.2rem 0.75rem;">
             <div class="col-md-6">
               <p><img src="assets/images/calendar.svg" alt="calendar"> от 7 до 12 лет</p>
             </div>
             <div class="col-md-6">
-              <p><img src="assets/images/type.svg" alt="type">Техническая</p>
+              <p><img src="assets/images/type.svg" alt="type">Творческая</p>
             </div>
           </div>
-          <div class="row  gx-4">
-            <div class="col-md-6">
-              <a href="#" class="courses-list-item-apply">Записаться</a>
-            </div>
+          
+          <div class="row" style="padding:0rem 1.5rem;">
             <div class=" col-md-6">
               <a href="#" class="courses-list-item-a">Подробнее</a>
             </div>
+            <div class="col-md-6">
+              <a href="#" class="courses-list-item-apply">Записаться</a>
+            </div>
+         
           </div>
         </div>
-        <div class="col-md-2 courses-list-item">
-          <div class="courses-list-item-img" style="background-image: url('assets/images/games1.png');">
+        <div class="courses-list-item course-age-7">
+          <div class="courses-list-item-img" style="background-image: url('assets/images/3d1.svg');">
           </div>
-          <h2>Разработка компьютерных
-            игр (1 год)</h2>
-          <div class="row  gx-4">
+          <h2 style="padding:0.5rem;">Основы программирования в программе 3D’s Max (1 год)</h2>
+          <div class="row" style="padding:0rem 0.75rem;">
             <div class="col-md-6">
               <p><img src="assets/images/calendar.svg" alt="calendar"> от 7 до 12 лет</p>
             </div>
             <div class="col-md-6">
-              <p><img src="assets/images/type.svg" alt="type">Техническая</p>
+              <p><img src="assets/images/type.svg" alt="type">Творческая</p>
             </div>
           </div>
-          <div class="row  gx-4">
-            <div class="col-md-6">
-              <a href="#" class="courses-list-item-apply">Записаться</a>
-            </div>
+          
+          <div class="row" style="padding:0rem 1.5rem;">
             <div class=" col-md-6">
               <a href="#" class="courses-list-item-a">Подробнее</a>
             </div>
+            <div class="col-md-6">
+              <a href="#" class="courses-list-item-apply">Записаться</a>
+            </div>
+         
           </div>
         </div>
-        <div class="col-md-2 courses-list-item">
-          <div class="courses-list-item-img" style="background-image: url('assets/images/cartoons.png');">
+        <div class="courses-list-item course-age-13">
+          <div class="courses-list-item-img" style="background-image: url('assets/images/oit.svg');">
           </div>
-          <h2>Основы компьютерной графики и мультипликации</h2>
-          <div class="row  gx-4">
+          <h2 style="padding:0.5rem;">Основы информационных технологий</h2>
+          <div class="row" style="padding:0rem 0.75rem;">
             <div class="col-md-6">
-              <p><img src="assets/images/calendar.svg" alt="calendar"> от 7 до 12 лет</p>
+              <p><img src="assets/images/calendar.svg" alt="calendar"> от 13 до 17 лет</p>
             </div>
             <div class="col-md-6">
               <p><img src="assets/images/type.svg" alt="type">Техническая</p>
             </div>
           </div>
-          <div class="row  gx-4">
-            <div class="col-md-6">
-              <a href="#" class="courses-list-item-apply">Записаться</a>
-            </div>
+          
+          <div class="row" style="padding:0rem 1.5rem;">
             <div class=" col-md-6">
-              <a href="#" class="courses-list-item-a">Подробнее</a>
+              <a href="courses/oit.html" class="courses-list-item-a">Подробнее</a>
             </div>
+            <div class="col-md-6">
+              <a href="courses/oit.html" class="courses-list-item-apply">Записаться</a>
+            </div>
+         
           </div>
         </div>
-        <div class="col-md-2 courses-list-item">
-          <div class="courses-list-item-img" style="background-image: url('assets/images/3d2.png');">
+        <div class="courses-list-item course-age-13">
+          <a href="courses/oit.html" class="block-a">
+          <div class="courses-list-item-img" style="background-image: url('assets/images/python.svg');">
           </div>
-          <h2>Основы программирования в программе 3D’s Max (2 год)</h2>
-          <div class="row  gx-4">
+          <h2 style="padding:0.5rem;">Основы программирования на Python</h2>
+        </a>
+          <div class="row" style="padding:0rem 0.75rem;">
             <div class="col-md-6">
-              <p><img src="assets/images/calendar.svg" alt="calendar"> от 7 до 12 лет</p>
-            </div>
-            <div class="col-md-6">
-              <p><img src="assets/images/type.svg" alt="type">Техническая</p>
-            </div>
-          </div>
-          <div class="row  gx-4">
-            <div class="col-md-6">
-              <a href="#" class="courses-list-item-apply">Записаться</a>
-            </div>
-            <div class=" col-md-6">
-              <a href="#" class="courses-list-item-a">Подробнее</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2 courses-list-item">
-          <div class="courses-list-item-img" style="background-image: url('assets/images/games2.png');">
-          </div>
-          <h2>Разработка компьютерных
-            игр (2 год)</h2>
-          <div class="row  gx-4">
-            <div class="col-md-6">
-              <p><img src="assets/images/calendar.svg" alt="calendar"> от 7 до 12 лет</p>
+              <p><img src="assets/images/calendar.svg" alt="calendar"> от 13 до 17 лет</p>
             </div>
             <div class="col-md-6">
               <p><img src="assets/images/type.svg" alt="type">Техническая</p>
             </div>
           </div>
-          <div class="row  gx-4">
-            <div class="col-md-6">
-              <a href="#" class="courses-list-item-apply">Записаться</a>
-            </div>
+          
+          <div class="row" style="padding:0rem 1.5rem;">
             <div class=" col-md-6">
-              <a href="#" class="courses-list-item-a">Подробнее</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2 courses-list-item">
-          <div class="courses-list-item-img" style="background-image: url('assets/images/mobile.png');">
-          </div>
-          <h2>Разработка мобильных
-            приложений</h2>
-          <div class="row  gx-4">
-            <div class="col-md-6">
-              <p><img src="assets/images/calendar.svg" alt="calendar"> от 7 до 12 лет</p>
+              <a href="courses/oit.html" class="courses-list-item-a">Подробнее</a>
             </div>
             <div class="col-md-6">
-              <p><img src="assets/images/type.svg" alt="type">Техническая</p>
+              <a href="courses/oit.html" class="courses-list-item-apply">Записаться</a>
             </div>
+         
           </div>
-          <div class="row  gx-4">
-            <div class="col-md-6">
-              <a href="#" class="courses-list-item-apply">Записаться</a>
-            </div>
-            <div class=" col-md-6">
-              <a href="#" class="courses-list-item-a">Подробнее</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2 courses-list-item">
-          <div class="courses-list-item-img" style="background-image: url('assets/images/web.png');">
-          </div>
-          <h2>Технологии веб-дизайна</h2>
-          <div class="row  gx-4">
-            <div class="col-md-6">
-              <p><img src="assets/images/calendar.svg" alt="calendar"> от 7 до 12 лет</p>
-            </div>
-            <div class="col-md-6">
-              <p><img src="assets/images/type.svg" alt="type">Техническая</p>
-            </div>
-          </div>
-          <div class="row  gx-4">
-            <div class="col-md-6">
-              <a href="#" class="courses-list-item-apply">Записаться</a>
-            </div>
-            <div class=" col-md-6">
-              <a href="#" class="courses-list-item-a">Подробнее</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2 courses-list-item">
-          <div class="courses-list-item-img" style="background-image: url('assets/images/art-school.png');">
-          </div>
-          <h2>Школа искусств</h2>
-          <div class="row  gx-4">
-            <div class="col-md-6">
-              <p><img src="assets/images/calendar.svg" alt="calendar"> от 7 до 12 лет</p>
-            </div>
-            <div class="col-md-6">
-              <p><img src="assets/images/type.svg" alt="type">Техническая</p>
-            </div>
-          </div>
-          <div class="row  gx-4">
-            <div class="col-md-6">
-              <a href="#" class="courses-list-item-apply">Записаться</a>
-            </div>
-            <div class=" col-md-6">
-              <a href="#" class="courses-list-item-a">Подробнее</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2 courses-list-item">
-          <div class="courses-list-item-img" style="background-image: url('assets/images/android.png');">
-          </div>
-          <h2>Программирование
-            Android-роботов</h2>
-          <div class="row  gx-4">
-            <div class="col-md-6">
-              <p><img src="assets/images/calendar.svg" alt="calendar"> от 7 до 12 лет</p>
-            </div>
-            <div class="col-md-6">
-              <p><img src="assets/images/type.svg" alt="type">Техническая</p>
-            </div>
-          </div>
-          <div class="row  gx-4">
-            <div class="col-md-6">
-              <a href="#" class="courses-list-item-apply">Записаться</a>
-            </div>
-            <div class=" col-md-6">
-              <a href="#" class="courses-list-item-a">Подробнее</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2 courses-list-item">
-          <div class="courses-list-item-img" style="background-image: url('assets/images/scratch.png');">
-          </div>
-          <h2>Разработка компьютерных игр
-            в среде Scratch</h2>
-          <div class="row  gx-4">
-            <div class="col-md-6">
-              <p><img src="assets/images/calendar.svg" alt="calendar"> от 7 до 12 лет</p>
-            </div>
-            <div class="col-md-6">
-              <p><img src="assets/images/type.svg" alt="type">Техническая</p>
-            </div>
-          </div>
-          <div class="row  gx-4">
-            <div class="col-md-6">
-              <a href="#" class="courses-list-item-apply">Записаться</a>
-            </div>
-            <div class=" col-md-6">
-              <a href="#" class="courses-list-item-a">Подробнее</a>
-            </div>
-          </div>
+        
         </div>
       </div>
     </section>
     <footer class="footer">
-      <div class="row footer-contact">
+      <div class="container">
+          <div class="row footer-contact">
         <div class="col-md-4 footer-contact-form">
           <h2 class="footer-contact-form-header">Остались вопросы? Задайте их нам</h2>
           <form action="#" class="footer-form">
@@ -496,7 +372,9 @@
         <div class="col-12 d-flex justify-content-start pl-2">
           <p>© 2000-2021 Детская компьютерная школа</p>
         </div>
+      </div> 
       </div>
+   
     </footer>
   </div>
 

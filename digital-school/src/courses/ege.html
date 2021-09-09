@@ -12,18 +12,20 @@
 </head>
 
 <body>
-  <div class="container">
-    <section class="top-panel row">
+  <div class="container-fluid">
+    <section class="top-panel">
+      <div class="container">
+        <div class="row">
       <div class="col-md-4 sstu-logo">
         <a href="https://sstu.ru">
           <figure class="logo-figure">
-            <img src="../assets/images/logo-sstu.svg" alt="sstu-logo">
+            <img src="http://www.inpit.sstu.ru/imgs/sstu.png" alt="sstu-logo">
             <figcaption>Саратовский государственный технический университет имени Гагарина Ю.А.</figcaption>
           </figure>
         </a>
       </div>
       <div class="col-md-4  top-panel-contact ">
-        <p class="top-panel-phone"><a href="tel:+7(8452)998734">+7 (8452) 99-87-34</a></p>
+        <p class="top-panel-phone"><a href="tel:+7 (8452) 99-87-34">+7 (8452) 99-87-34</a></p>
         <ul class="for-horizontal-list list-unstyled ">
           <li><a href="https://instagram.com"><img src="../assets/images/insta.svg" class="social-icons"
                 alt="instagram"></a></li>
@@ -33,19 +35,22 @@
           <li><a href="https://facebook.com"><img src="../assets/images/fb.svg" class="social-icons" alt="fb"></a></li>
         </ul>
       </div>
-      <div class="col-md-3 top-panel-about">
+        <div class="col-md-3 top-panel-about">
         <p><a href="https://www.sstu.ru/sveden/" target="_blank" alt="Сведения об образовательной организации">Сведения
             об образовательной организации</a></p>
       </div>
       <div class="col-md-1 justify-content-end">
         <a href="#"><img src="../assets/images/glasses.svg" alt="glasses"></a>
       </div>
+        </div>
+      </div>
+ 
     </section>
-    <section class="banner pt-5 pl-2">
+    <section class="banner pt-5 pl-2 container">
       <div class="col-md-6 logo">
-        <a href="../index.html">
+        <a href="index.html">
           <figure class="logo-figure ">
-            <img src="../assets/images/logo.png" alt="logo">
+            <img src="../assets/images/logo.svg" alt="logo">
             <figcaption class="banner-logo">Детская компьютерная школа</figcaption>
           </figure>
         </a>
@@ -58,10 +63,11 @@
       </div>
     </section>
     <nav class="top-menu">
-      <ul class="top-menu-list list-unstyled ">
+      <ul class="top-menu-list list-unstyled container ">
+        <li class="top-menu-list-item"><a href="../index.html" >Главная</a></li>
         <li class="top-menu-list-item "><a href="../about.html" >О нас</a></li>
-        <li class="top-menu-list-item"><a href="../courses.html" class="active">Курсы</a></li>
-        <li class="top-menu-list-item"><a href="../courses/courses/ege.html">Подготовка к ЕГЭ</a></li>
+        <li class="top-menu-list-item"><a href="../courses.html" >Курсы</a></li>
+        <li class="top-menu-list-item"><a href="../courses/ege.html" class="active">Подготовка к ЕГЭ</a></li>
         <li class="top-menu-list-item"><a href="../abitur.html">Абитуриенту</a></li>
         <li class="top-menu-list-item"><a href="../reviews.html">Отзывы</a></li>
         <li class="top-menu-list-item"><a href="../contact.html">Контакты</a></li>
@@ -73,7 +79,7 @@
         <a href="#question" class="main-banner-text-a abris-header-color">Записаться на курс</a>
       </div>
     </section>
-    <section class="course-text">
+    <section class="course-text container">
       <div class="row">
         <div class="col-md-12">
 <p>Подготовительные курсы существуют в СГТУ более 50 лет! Подготовительные курсы осуществляют комплексную подготовку к прохождению государственной итоговой аттестации (ОГЭ, ЕГЭ) обучающихся 9, 10, 11 классов, техникумов, колледжей. Занятия  проводят преподаватели  вуза, знакомые с системой проведения и критериями оценки ЕГЭ, многие из них привлекались к проверке ЕГЭ в качестве экспертов.</p>
@@ -81,9 +87,10 @@
       </div>
     </section>
     <section class="main-text  course-about">
-      <div class="row">
+      <div class="container">
+        <div class="row ">
         <div class="col-md-6 text p-4 d-flex align-items-center" style="flex-wrap:wrap;">
-          <h5>Подгтовка к ЕГЭ- это: </h5>
+          <h5>Подготовка к ЕГЭ- это: </h5>
           <ul>
             <li class="p-2">Профессиональное изучение технологий программирования;
             </li>
@@ -127,9 +134,11 @@
           
         </div>
       </div>
+      </div>
+      
     </section>
 
-<section class="course-programm">
+<section class="container">
   <div class="row section-header">
     <h2 class="block-indent">Наши преимущества</h2>
   </div>
@@ -173,7 +182,7 @@
     </div>
   </div>
 </section>
-<section class="course-contact">
+<section class="course-contact container">
   <div class="row section-header">
     <h2 class="block-indent">Наши контакты</h2>
   </div> 
@@ -199,74 +208,77 @@
     </p>
   </div>
 </section>
-    <footer class="footer">
+<footer class="footer">
+  <div class="container">
       <div class="row footer-contact">
-        <div class="col-md-4 footer-contact-form">
-          <h2 class="footer-contact-form-header" id="question">Остались вопросы? Задайте их нам</h2>
-          <form action="#" class="footer-form">
-            <div class="row">
-              <div class="col-12">
-                <input type="text" name="fio" id="fio" required placeholder="Имя*">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <input type="tel" name="phone" id="phone" placeholder="Телефон">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <input type="email" name="email" id="email" required placeholder="Email*">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <textarea name="message" id="message" cols="30" rows="50" placeholder="Сообщение...*"></textarea>
-              </div>
-            </div>
-            <div class="row d-flex align-items-end justify-content-end">
-              <div class="col-12">
-                <input type="submit" class="submit-button" name="submit-button" id="submit-button" value="Отправить">
-              </div>
-            </div>
-          </form>
+    <div class="col-md-4 footer-contact-form">
+      <h2 class="footer-contact-form-header">Остались вопросы? Задайте их нам</h2>
+      <form action="#" class="footer-form">
+        <div class="row">
+          <div class="col-12">
+            <input type="text" name="fio" id="fio" required placeholder="Имя*">
+          </div>
         </div>
-        <div class="col-md-8" class="footer-map">
-          <iframe src="https://yandex.ru/map-widget/v1/-/CCUa7-EGgB" width="100%" height="100%" frameborder="1"
-            allowfullscreen="true" style="position:relative;"></iframe>
+        <div class="row">
+          <div class="col-12">
+            <input type="tel" name="phone" id="phone" placeholder="Телефон">
+          </div>
         </div>
-      </div>
-      <div class="row d-flex footer-contact">
-        <div class="col-md-4 col-12 footer-contact-text">
-          <p>Детская компьютерная школа</p>
-          <p>ул. Политехническая, д. 77. офис 417</p>
-          <p><a href="tel:+7 (8452) 99-87-34">+7 (8452) 99-87-34</a></p>
+        <div class="row">
+          <div class="col-12">
+            <input type="email" name="email" id="email" required placeholder="Email*">
+          </div>
         </div>
-        <div class="col-md-6 footer-contact-menu flex-column justify-content-center align-items-center">
-          <a href="#" target="_blank" class="d-flex">О нас</a>
-          <a href="#" target="_blank" class="d-flex">Курсы</a>
-          <a href="#" target="_blank" class="d-flex">Подготовка к ЕГЭ</a>
-          <a href="#" target="_blank" class="d-flex">Абитуриенту</a>
-          <a href="#" target="_blank" class="d-flex">Отзывы</a>
-          <a href="#" target="_blank" class="d-flex">Контакты</a>
+        <div class="row">
+          <div class="col-12">
+            <textarea name="message" id="message" cols="30" rows="50" placeholder="Сообщение...*"></textarea>
+          </div>
         </div>
-        <div class="col-md-2 footer-contact-social">
-          <ul class="for-horizontal-list list-unstyled ">
-            <li><a href="https://instagram.com"><img src="../assets/images/insta.svg" class="social-icons"
-                  alt="instagram"></a></li>
-            <li><a href="https://youtube.com"><img src="../assets/images/ytube.svg" class="social-icons" alt="youtube"></a>
-            </li>
-            <li><a href="https://vk.com"><img src="../assets/images/vk.svg" class="social-icons" alt="vk"></a></li>
-            <li><a href="https://facebook.com"><img src="../assets/images/fb.svg" class="social-icons" alt="fb"></a></li>
-          </ul>
+        <div class="row d-flex align-items-end justify-content-end">
+          <div class="col-12">
+            <input type="submit" class="submit-button" name="submit-button" id="submit-button" value="Отправить">
+          </div>
         </div>
-      </div>
-      <div class="row copyright">
-        <div class="col-12 d-flex justify-content-start pl-2">
-          <p>© 2000-2021 Детская компьютерная школа</p>
-        </div>
-      </div>
-    </footer>
+      </form>
+    </div>
+    <div class="col-md-8" class="footer-map">
+      <iframe src="https://yandex.ru/map-widget/v1/-/CCUa7-EGgB" width="100%" height="100%" frameborder="1"
+        allowfullscreen="true" style="position:relative;"></iframe>
+    </div>
+  </div>
+  <div class="row d-flex footer-contact">
+    <div class="col-md-4 col-12 footer-contact-text">
+      <p>Детская компьютерная школа</p>
+      <p>ул. Политехническая, д. 77. офис 417</p>
+      <p><a href="tel:+7 (8452) 99-87-34">+7 (8452) 99-87-34</a></p>
+    </div>
+    <div class="col-md-6 footer-contact-menu flex-column justify-content-center align-items-center">
+      <a href="#" target="_blank" class="d-flex">О нас</a>
+      <a href="#" target="_blank" class="d-flex">Курсы</a>
+      <a href="#" target="_blank" class="d-flex">Подготовка к ЕГЭ</a>
+      <a href="#" target="_blank" class="d-flex">Абитуриенту</a>
+      <a href="#" target="_blank" class="d-flex">Отзывы</a>
+      <a href="#" target="_blank" class="d-flex">Контакты</a>
+    </div>
+    <div class="col-md-2 footer-contact-social">
+      <ul class="for-horizontal-list list-unstyled ">
+        <li><a href="https://instagram.com"><img src="assets/images/insta.svg" class="social-icons"
+              alt="instagram"></a></li>
+        <li><a href="https://youtube.com"><img src="assets/images/ytube.svg" class="social-icons" alt="youtube"></a>
+        </li>
+        <li><a href="https://vk.com"><img src="assets/images/vk.svg" class="social-icons" alt="vk"></a></li>
+        <li><a href="https://facebook.com"><img src="assets/images/fb.svg" class="social-icons" alt="fb"></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row copyright">
+    <div class="col-12 d-flex justify-content-start pl-2">
+      <p>© 2000-2021 Детская компьютерная школа</p>
+    </div>
+  </div> 
+  </div>
+
+</footer>
   </div>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">

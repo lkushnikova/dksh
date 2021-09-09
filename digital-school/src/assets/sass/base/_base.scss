@@ -38,6 +38,7 @@ a {
 a.active {
   color: #a358cb !important;
   text-decoration: underline;
+  font-weight:600;
 }
 
 .logo-figure {
@@ -185,7 +186,7 @@ a.banner-sidemenu-link {
   margin-bottom: 2.8rem;
 
   &-inner-page {
-    min-height: 400px;
+    min-height: 500px;
   }
 
   &-text {
@@ -323,8 +324,10 @@ a.banner-sidemenu-link {
 .courses-list-item-img {
   background-image: url('../../images/art-grafics.svg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   height: 162px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .courses-list-item {
@@ -376,6 +379,9 @@ line-height: 15px;
 
     img {
       padding-right: 0.2rem;
+      z-index: 1;
+      border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
       &:hover{
         transition: all 0.5s ease;
            transform: rotateY(-10deg);
@@ -437,6 +443,7 @@ line-height: 15px;
   height: 496px;
   overflow: hidden;
   position: relative;
+  margin-right:1rem;
 
   h3 {
     font-weight: 600;
@@ -457,11 +464,12 @@ line-height: 15px;
     overflow: hidden;
     border-radius: 10px;
     margin-bottom: 1.7rem;
+    z-index: 1;
   }
 
   &-a {
     font-weight: bold;
-    font-size: 11px;
+    font-size: 13px;
     line-height: 13px;
     display: flex;
     align-items: flex-end;
@@ -473,7 +481,7 @@ line-height: 15px;
   }
 
   &-date {
-    font-size: 11px;
+    font-size: 13px;
     line-height: 13px;
     color: #9B9B9B;
     margin-right: 0.5rem;
@@ -533,7 +541,7 @@ line-height: 15px;
 
     &-a {
       font-weight: bold;
-      font-size: 11px;
+      font-size: 13px;
       line-height: 13px;
       display: flex;
       align-items: flex-end;
@@ -545,7 +553,7 @@ line-height: 15px;
     }
 
     &-date {
-      font-size: 11px;
+      font-size: 13px;
       line-height: 13px;
       color: #9B9B9B;
       margin-right: 0.5rem;
@@ -567,14 +575,17 @@ line-height: 15px;
   &-item {
     border: 1px solid #ADADAD;
     border-radius: 10px;
-    padding: 2.7rem;
+    height:285px;
+    //padding: 2.7rem;
+    position: relative;
+    z-index:10;
 
     h3 {
       font-weight: 600;
       font-size: $text-m;
       line-height: 22px;
-      color: #000000;
-      padding-bottom: 1rem;
+      color: #464646;
+      padding:1rem;
     }
 
     &-text {
@@ -587,9 +598,10 @@ line-height: 15px;
 
     &-a {
       font-weight: bold;
-      font-size: 11.034px;
+      font-size: 13px;
       line-height: 13px;
       color: #85BE4F;
+      padding-left:1rem;
     }
 
     &-img {
@@ -600,6 +612,7 @@ line-height: 15px;
       height: 90px;
       width:100%;
       margin-bottom: 2rem;
+      z-index:1;
     }
   }
 }
@@ -626,6 +639,7 @@ line-height: 15px;
   padding: 2rem 1rem;
   background: #8CC754;
   color: #fff;
+  margin-top:2.8rem;
 }
 
 .footer-form input,
@@ -1100,7 +1114,7 @@ color: #272727;
   p{
     text-transform: none;
   }
-  padding-left:2.8rem;
+  padding-left:4.8rem;
 }
 .course-contact p{
   font-style: normal;
@@ -1120,9 +1134,7 @@ color:$text-color--dark;
 .course-contact{
   margin-bottom:2.8rem;
 }
-.reviews{
-  margin:3.8rem 0rem;
-}
+
 a.block-a{
   color:$text-color;
   text-decoration: none;

@@ -12,12 +12,14 @@
 </head>
 
 <body>
-  <div class="container">
-    <section class="top-panel row">
+  <div class="container-fluid">
+    <section class="top-panel">
+      <div class="container">
+        <div class="row">
       <div class="col-md-4 sstu-logo">
         <a href="https://sstu.ru">
           <figure class="logo-figure">
-            <img src="assets/images/logo-sstu.svg" alt="sstu-logo">
+            <img src="http://www.inpit.sstu.ru/imgs/sstu.png" alt="sstu-logo">
             <figcaption>Саратовский государственный технический университет имени Гагарина Ю.А.</figcaption>
           </figure>
         </a>
@@ -33,19 +35,22 @@
           <li><a href="https://facebook.com"><img src="assets/images/fb.svg" class="social-icons" alt="fb"></a></li>
         </ul>
       </div>
-      <div class="col-md-3 top-panel-about">
+        <div class="col-md-3 top-panel-about">
         <p><a href="https://www.sstu.ru/sveden/" target="_blank" alt="Сведения об образовательной организации">Сведения
             об образовательной организации</a></p>
       </div>
       <div class="col-md-1 justify-content-end">
         <a href="#"><img src="assets/images/glasses.svg" alt="glasses"></a>
       </div>
+        </div>
+      </div>
+ 
     </section>
-    <section class="banner pt-5 pl-2">
+    <section class="banner pt-5 pl-2 container">
       <div class="col-md-6 logo">
         <a href="index.html">
           <figure class="logo-figure ">
-            <img src="assets/images/logo.png" alt="logo">
+            <img src="assets/images/logo.svg" alt="logo">
             <figcaption class="banner-logo">Детская компьютерная школа</figcaption>
           </figure>
         </a>
@@ -57,10 +62,11 @@
           компьютерная школа</a>
       </div>
     </section>
-    <nav class="top-menu">
+    <nav class="top-menu container">
       <ul class="top-menu-list list-unstyled ">
-        <li class="top-menu-list-item "><a href="about.html">О нас</a></li>
-        <li class="top-menu-list-item"><a href="courses.html">Курсы</a></li>
+        <li class="top-menu-list-item"><a href="index.html" >Главная</a></li>
+        <li class="top-menu-list-item"><a href="about.html">О нас</a></li>
+        <li class="top-menu-list-item"><a href="courses.html" >Курсы</a></li>
         <li class="top-menu-list-item"><a href="courses/ege.html">Подготовка к ЕГЭ</a></li>
         <li class="top-menu-list-item"><a href="abitur.html" class="active">Абитуриенту</a></li>
         <li class="top-menu-list-item"><a href="reviews.html">Отзывы</a></li>
@@ -69,7 +75,7 @@
     </nav>
     <section class="main-banner main-banner-inner-page bg-abitur">
     </section>
-    <section class="main-text reasons">
+    <section class="main-text reasons container">
       <div class="row">
         <div class="col-md-6 text p-4">
           <h5>Шесть причин поступить в <a href="https://inpit.sstu.ru">Институт прикладных информационных технологий и
@@ -142,7 +148,7 @@
         </div>
       </div>
     </section>
-    <section class="main-text programm">
+    <section class="main-text programm container">
       <div class="row gy-5">
         <div class="col-12 d-flex justify-content-center">
           <h5>Направления обучения:</h5>
@@ -178,7 +184,7 @@
 </svg>
 </div>
     </section>
-    <section class="open-doors">
+    <section class="open-doors container">
       <div class="row d-flex justify-content-space-between">
         <div class="col-md-6 open-doors-title">
           <p class="title-text">Дни открытых дверей</p>
@@ -203,7 +209,7 @@
         </div>
       </div>
     </section>
-    <section class="main-text choose-programm">
+    <section class="main-text choose-programm container">
       <div class="row gy-5">
         <div class="col-12 d-flex justify-content-start">
           <h5>Узнай, какое направление подходит именно тебе!</h5>
@@ -212,7 +218,8 @@
   
     </section>
     <footer class="footer">
-      <div class="row footer-contact">
+      <div class="container">
+          <div class="row footer-contact">
         <div class="col-md-4 footer-contact-form">
           <h2 class="footer-contact-form-header">Остались вопросы? Задайте их нам</h2>
           <form action="#" class="footer-form">
@@ -277,7 +284,9 @@
         <div class="col-12 d-flex justify-content-start pl-2">
           <p>© 2000-2021 Детская компьютерная школа</p>
         </div>
+      </div> 
       </div>
+   
     </footer>
   </div>
 

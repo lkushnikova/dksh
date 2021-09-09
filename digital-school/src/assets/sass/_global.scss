@@ -11,7 +11,7 @@ line-height: 22px;
 margin-top:1rem;
 }
 .bg-abitur {
-  background-image: url('../../images/bg-abitur.jpeg');
+  background-image: url('../../images/bg-abitur.png');
   background-size: cover;
 }
 .block-indent{
@@ -36,8 +36,8 @@ color:#fff;
 }
 .oit-bg{
   background-image: url('../../images/oit-bg.svg');
-  background-size: contain;
-  min-height:400px;
+  background-size: cover;
+  min-height:500px;
   margin-bottom: 20px;
 }
 .course-text{
