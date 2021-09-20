@@ -27,7 +27,7 @@ img {
 a {
   text-decoration: none;
   transition: all .2s linear;
-  color: #006CCF;
+  color: $text-color--dark;
 
   &:hover {
     color: #a358cb;
@@ -749,7 +749,7 @@ social-icons:last-child {
 .main-text {
   font-weight: 500;
   font-size: $text-s;
-  line-height: 17px;
+  line-height: 20px;
   color: $text-color--dark;
   margin-bottom: 2.8rem;
 
@@ -786,10 +786,10 @@ social-icons:last-child {
     overflow: hidden;
     font-style: italic;
     font-weight: normal;
-    font-size: 9px;
-    line-height: 11px;
+    font-size: 12px;
+    line-height: 15px;
     color: #272727;
-    height: 524px;
+    height: 624px;
     overflow: hidden;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -825,12 +825,18 @@ social-icons:last-child {
 }
 
 .tutors-portrait {
-  min-height: 220px;
+  min-height: 286px;
   flex-direction: column;
   flex-grow: 2;
   justify-content: space-evenly;
   align-items: center;
   margin-bottom: 14px;
+  img{
+    width:120px;
+    height:120px;
+  border-radius:50%;
+
+  }
 
 }
 
