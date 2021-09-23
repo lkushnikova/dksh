@@ -747,8 +747,8 @@ social-icons:last-child {
 }
 
 .main-text {
-  font-weight: 500;
-  font-size: $text-s;
+  //font-weight: 500;
+  font-size: 16px;
   line-height: 20px;
   color: $text-color--dark;
   margin-bottom: 2.8rem;
@@ -778,6 +778,7 @@ social-icons:last-child {
   background: #F5F5F5;
   margin-bottom: 2.8rem;
   padding: 3.1rem 3.75rem;
+   
 
   &-one {
     background: #FFFFFF;
@@ -789,7 +790,7 @@ social-icons:last-child {
     font-size: 12px;
     line-height: 15px;
     color: #272727;
-    height: 624px;
+    height: 684px;
     overflow: hidden;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -855,7 +856,7 @@ social-icons:last-child {
 .choose-programm h5 {
   font-weight: 600;
   font-size: 24px;
-  line-height: 29px;
+  line-height: 48px;
 }
 
 .reasons {
@@ -879,9 +880,9 @@ social-icons:last-child {
 
 .reason-vr-bg {
   position: absolute;
-  right: 0;
+  right: 16px;
   bottom: 0;
-  width: 420px;
+  width: 630px;
 }
 
 .reason-bg-violet {
@@ -1005,8 +1006,8 @@ margin-bottom:1rem;
 }
 .course-about-bg{
   position: absolute;
-  bottom: -30px;
-    right: -62px;
+  bottom: -20px;
+    right: 0px;
 }
 .course-about{
   background-color:#f5f5f5;
@@ -1028,7 +1029,7 @@ margin-bottom:2rem;
   }
   p{
     font-weight: 600;
-    font-size: 1.25rem;
+    font-size: 1.0rem;
     line-height: 24px;
     color: $text-color--dark;
     width: 100%;
@@ -1148,4 +1149,12 @@ a.block-a{
     color:#a358cb;
     transition: all 1s ease;
   }
+}
+.fuzzy-lines{
+  background-image:url('../../images/reason-bg-violet.svg'),url('../../images/reason-bg-orange.svg');
+  background-repeat: no-repeat,no-repeat;
+  background-position: right bottom, right top;
+}
+.outer-tutor{
+  padding-right:1rem;
 }

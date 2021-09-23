@@ -45,7 +45,7 @@ color:#fff;
   font-style: normal;
 font-weight: 500;
 font-size: 18px;
-line-height: 22px;
+line-height: 38px;
 color: $text-color--dark;
 margin-bottom:2.8rem;
 }
@@ -67,5 +67,19 @@ color:$header-color;
   transition: all 1s ease;
   color:#fff;
   border-color:$accent-color;
+}
+}
+.styled-list li{
+list-style-type: none;
+position: relative;
+&::before{
+  content:'';
+  position:absolute;
+  left:-10px;
+  top:15px;
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background: linear-gradient(146.91deg, #DB538C 14.89%, #BD67D5 86.29%);
 }
 }

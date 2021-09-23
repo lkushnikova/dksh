@@ -8,6 +8,8 @@
   <title>Детская компьютерная школа</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
   <link rel="stylesheet" href="assets/css/pages/index.css">
 </head>
 
@@ -73,11 +75,12 @@
         <li class="top-menu-list-item"><a href="contact.html">Контакты</a></li>
       </ul>
     </nav>
-    <section class="main-banner">
+    <section class="main-banner" style="background-image: url('assets/images/bg-about.svg');">
       <div class="container">
         <div class="main-banner-text">
-          <p class="main-banner-text-small">Детская компьютерная</p>
-          <p class="main-banner-text-large">школа</p>
+          <p class="main-banner-text-small">Научим школьников любым</p>
+          <p class="main-banner-text-large">Информационным технологиям</p>
+          <a href="#" class="main-banner-text-a">Перейти к курсам</a>
         </div>
       </div>   
     </section>
@@ -106,12 +109,14 @@
     <section class="tutors">
       <div class="container">
            <div class="row">
-        <div class="col-12 d-flex justify-content-center">
+        <div class="col-12 d-flex justify-content-center ">
           <h2 class="row-header">Преподаватели</h2>
         </div>
       </div>
-      <div class="row justify-content-center">
-        <div class="col-md-3 tutors-one ">
+      <div class="container d-flex justify-content-center flex-wrap">
+  <div class="row justify-content-start ">
+    <div class="outer-tutor col-md-3">
+   <div class=" tutors-one">
           <div class="bg-tutor-first tutors-portrait d-flex">
             <img src="assets/images/faifel.png" alt="faifel">
             <h5>Файфель Борис Леонидович</h5>
@@ -120,14 +125,16 @@
             <p>Кандидат физико-математических наук, доцент кафедры «Прикладные информационные технологии» Института
               прикладных информационных технологий и коммуникаций.</p>
             <p><strong>Преподаватель курсов</strong></p>
-            <ul class="list-unstyled">
-              <li>-Алгоритмы программирования и структуры данных</li>
-              <li>-Функциональное программирование</li>
+            <ul>
+              <li>Алгоритмы программирования и структуры данных</li>
+              <li>Функциональное программирование</li>
             </ul>
           </div>
 
         </div>
-        <div class="col-md-3 tutors-one offset-1">
+    </div>
+    <div class="outer-tutor col-md-3">
+   <div class="tutors-one">
           <div class="bg-tutor-second tutors-portrait d-flex">
             <img src="assets/images/zakharov.png" alt="zakharov">
             <h5>Захаров Евгений Евгеньевич</h5>
@@ -142,14 +149,16 @@
               стажировку в корпорации D&K, в телекомпании TRT (г. Стамбул).
               Специалист по созданию видеорекламы.</p>
                <p><strong>Преподаватель курсов</strong></p>
-              <ul class="list-unstyled">
-                <li>-Я блогер<li>
-                  <li>-Основы видеомонтажа</li>
+              <ul>
+                <li>Я блогер</li>
+                  <li>Основы видеомонтажа</li>
               </ul>
           </div>
 
         </div>
-        <div class="col-md-3 tutors-one offset-1">
+    </div>
+    <div class="outer-tutor col-md-3">
+  <div class="tutors-one">
           <div class="bg-tutor-first tutors-portrait d-flex">
             <img src="assets/images/danilova.png" alt="danilova">
             <h5>Данилова Светлана Анатольевна</h5>
@@ -160,18 +169,18 @@
               Adobe Flash). Преподаватель учебного центра дополнительного образования
               «АПТЭК», Профессионально-педагогического колледжа СГТУ.</p>
               <p><strong>Преподаватель курсов</strong></p>
-              <ul class="list-unstyled">
-                <li>-Основы компьютерной графики и мультипликации<li>
-                  <li>-Основы компьютерной анимации</li>
-                  <li>-Школа компьютерной графики и виртуальных технологий 1-ый год<li>
+              <ul>
+                <li>Основы компьютерной графики и мультипликации</li>
+                  <li>Основы компьютерной анимации</li>
+                  <li>Школа компьютерной графики и виртуальных технологий 1-ый год</li>
               </ul>
              
           </div>
 
         </div>
-      </div>
-      <div class="row justify-content-center gy-3">
-        <div class="col-md-3 tutors-one ">
+    </div>
+    <div class="outer-tutor col-md-3">
+        <div class=" tutors-one ">
           <div class="bg-tutor-second tutors-portrait d-flex">
             <img src="assets/images/finogenova.png" alt="finogenova">
             <h5>Финогенова Светлана Анатольевна</h5>
@@ -182,18 +191,23 @@
               прикладного искусства. Член Российского отделения международного Союза
               дизайнеров. Преподаватель и художественный руководитель Детской школы искусств.</p>
               <p><strong>Преподаватель курсов</strong></p>
-              <ul class="list-unstyled">
-                <li>-Основы цветоведения<li>
-                  <li>-Основы графики</li>
-                  <li>-Основы композиции</li>
-                    <li>-Основы живописи</li>
-                      <li>-Декоративно-прикладное искусство</li>
+              <ul>
+                <li>Основы цветоведения</li>
+                  <li>Основы графики</li>
+                  <li>Основы композиции</li>
+                    <li>Основы живописи</li>
+                      <li>Декоративно-прикладное искусство</li>
 
               </ul>
           </div>
 
         </div>
-        <div class="col-md-3 tutors-one offset-1">
+    </div>
+      
+      </div>
+      <div class="row justify-content-start gy-3">
+        <div class="outer-tutor col-md-3">
+               <div class="tutors-one">
           <div class="bg-tutor-second tutors-portrait d-flex">
             <img src="assets/images/kulakova.png" alt="kulakova">
             <h5>Кулакова Екатерина Михайловна</h5>
@@ -210,7 +224,9 @@
           </div>
 
         </div>
-        <div class="col-md-3 tutors-one offset-1">
+        </div>
+        <div class="outer-tutor col-md-3">
+          <div class="tutors-one">
           <div class="bg-tutor-first tutors-portrait d-flex">
             <img src="assets/images/korolyov.png" alt="korolyov">
             <h5>Королев Михаил Сергеевич</h5>
@@ -228,9 +244,9 @@
               </ul>
           </div>
          </div>
-      </div>
-      <div class="row justify-content-center gy-3">
-        <div class="col-md-3 tutors-one ">
+        </div>
+        <div class="outer-tutor col-md-3">
+  <div class=" tutors-one ">
           <div class="bg-tutor-second tutors-portrait d-flex">
             <img src="assets/images/timofeeva.png" alt="timofeeva">
             <h5>Тимофеева Наталья Сергеевна</h5>
@@ -255,49 +271,85 @@
             </div>
 
         </div>
-        <div class="col-md-3 tutors-one offset-1">
-          <div class="bg-tutor-second tutors-portrait d-flex">
-            <img src="assets/images/ermishin.png" alt="ermishin">
-            <h5>Галущенко Юрий Александрович</h5>
-          </div>
-          <div class="tutors-text">
-            <p>Высшее образование – искусствовед. Профессиональное образование -
-              Саратовское художественное училище им. А.П. Боголюбова по специальности
-              живопись. Повышение квалификации по дополнительной профессиональной
-              программе «Дополнительное образование на современном этапе».
-              Профессиональный художник и иллюстратор компьютерной графики.
-              Преподаватель Центров детского и молодежного творчества.</p>
-              <p>Преподаватель курсов:</p>
-              <ul>
-                <li>Живопись и цифровая графика</li>
-              </ul>
-          </div>
-
         </div>
-        <div class="col-md-3 tutors-one offset-1">
-          <div class="bg-tutor-first tutors-portrait d-flex">
-            <img src="assets/images/fedina.png" alt="fedina">
-            <h5>Федина Анастасия Вячеславовна</h5>
+        <div class="outer-tutor col-md-3">
+          <div class="tutors-one offset-1">
+            <div class="bg-tutor-first tutors-portrait d-flex">
+              <img src="assets/images/fedina.png" alt="fedina">
+              <h5>Федина Анастасия Вячеславовна</h5>
+            </div>
+            <div class="tutors-text">
+              <p>Ассистент кафедры «Прикладные информационные технологии» СГТУ имени
+                Гагарина Ю.А., программист веб-студии Института прикладных
+                информационных технологий и коммуникаций. Диплом с отличием по
+                направлению «Прикладная информатика». Диплом о международном
+                образовании Aptech Certification in Programming & Website Development.
+                </p>
+                <p>Преподаватель курсов:</p>
+                <ul>
+                  <li>Основы веб-разработки</li>
+                  <li>Технологии веб-дизайна</li>
+                </ul>
+            </div>
+           </div>
+        </div>
+
+        
+      </div>
+      <div class="row justify-content-start gy-3">
+        <div class="outer-tutor col-md-3">
+            <div class="tutors-one ">
+          <div class="bg-tutor-second tutors-portrait d-flex">
+            <img src="assets/images/terpogosova.jpg" alt="terpogosova">
+            <h5>Тер-Погосова Ольга Антоновна</h5>
           </div>
           <div class="tutors-text">
             <p>Ассистент кафедры «Прикладные информационные технологии» СГТУ имени
               Гагарина Ю.А., программист веб-студии Института прикладных
               информационных технологий и коммуникаций. Диплом с отличием по
-              направлению «Прикладная информатика». Диплом о международном
-              образовании Aptech Certification in Programming & Website Development.
-              </p>
+              направлению «Прикладная информатика». Многократный участник хакатонов
+              Всероссийского конкурса «Цифровой прорыв 2021».</p>
               <p>Преподаватель курсов:</p>
               <ul>
                 <li>Основы веб-разработки</li>
                 <li>Технологии веб-дизайна</li>
               </ul>
           </div>
-         </div>
+
+        </div>
+        </div>
+        <div class="outer-tutor col-md-3">
+          <div class="tutors-one">
+          <div class="bg-tutor-second tutors-portrait d-flex">
+            <img src="assets/images/ermishin.png" alt="ermishin">
+            <h5>Ермишин Владислав Алексеевич</h5>
+          </div>
+          <div class="tutors-text">
+            <p>Программист группы виртуальных технологий ИнПИТ СГТУ имени Гагарина Ю.А.
+              Диплом с отличием по направлению “Информационные системы и технологии в
+              медиаиндустрии”. Призёр международного конкурса компьютерных работ
+              «Цифровой ветер».</p><p>Неоднократный участник IT- хакатонов.</p> 
+              <p>Профессиональные навыки (компетенция): <strong>HTML, CSS, C#, ASP.NET MVC, Entity
+              Framework, SQL, Unity.</strong></p>
+              <p><strong>Преподаватель курсов:</strong></p>
+              <ul>
+                <li>Основы языка C#</li>
+                <li>Объектно-ориентированное программирование C#</li>
+                <li>MVC</li>
+              </ul>
+          </div>
+
+        </div>
+        </div>
+        
+    
       </div>
+      </div>
+    
       </div>
    
     </section>
-    <section class="main-text container">
+    <section class="main-text container fuzzy-lines">
       <div class="row gy-5">
         <div class="col-12 d-flex justify-content-center">
           <h2 class="row-header">Оплата и реквизиты</h2>
@@ -315,6 +367,7 @@
           <p>БИК 046311001 КБК 00000000000000000130</p>
         </div>
       </div>
+ 
     </section>
 
     <footer class="footer">
