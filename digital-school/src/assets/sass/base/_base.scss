@@ -1158,3 +1158,33 @@ a.block-a{
 .outer-tutor{
   padding-right:1rem;
 }
+.grafic3YearHover:hover{
+  cursor: pointer;
+  background-image: url('../../images/grafic3Year_hover.svg')!important;
+  transition: all 1s ease-in-out;
+}
+.oitHover:hover{
+  cursor: pointer;
+  background-image: url('../../images/oitHover.svg')!important;
+  transition: all 1s ease-in-out;
+}
+.webHover:hover{
+  cursor: pointer;
+  background-image: url('../../images/webHover.svg')!important;
+  transition: all 1s ease-in-out;
+}
+.cartoonsHover:hover{
+  cursor: pointer;
+  background-image: url('../../images/cartoonsHover.svg')!important;
+  transition: all 1s ease-in-out;
+}
+.animationHover:hover{
+  cursor: pointer;
+  background-image: url('../../images/animationHover.svg')!important;
+  transition: all 1s ease-in-out;
+}
+.grafic2YearHover:hover{
+  cursor: pointer;
+  background-image: url('../../images/grafic2YearHover.svg')!important;
+  transition: all 1s ease-in-out;
+}

@@ -10,6 +10,7 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/pages/index.css">
 </head>
 
@@ -52,14 +53,14 @@
       <div class="col-md-6 logo">
         <a href="index.html">
           <figure class="logo-figure ">
-            <img src="assets/images/logo.svg" alt="logo">
-            <figcaption class="banner-logo">Детская компьютерная школа</figcaption>
+            <img data-aos="fade-down" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="100" src="assets/images/logo.svg" alt="logo">
+            <figcaption data-aos="fade-down" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="100" class="banner-logo">Детская компьютерная школа</figcaption>
           </figure>
         </a>
       </div>
       <div class="banner-sidemenu ">
-        <a href="https://inpit.sstu.ru" class="banner-sidemenu-link">Высшее образование</a>
-        <a href="#" class="banner-sidemenu-link">Дополнительное образование</a>
+        <a data-aos="fade-down" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="100"  href="https://inpit.sstu.ru" class="banner-sidemenu-link">Высшее образование</a>
+        <a data-aos="zoom-in-up" data-aos-duration="700" data-aos-easing="ease-in-out"  href="#" class="banner-sidemenu-link">Дополнительное образование</a>
         <a href="https://inpit.sstu.ru/digital-school" class="banner-sidemenu-link--active banner-sidemenu-link">Детская
           компьютерная школа</a>
       </div>
@@ -91,6 +92,7 @@
             <span><img src="assets/images/calendar.svg" alt="age">Возраст</span>
           </button>
           <div id="course-age" class="courses-filter-item-dpdwn" >
+            <p id="for-course-age-all">Все</p>
             <p id="for-course-age-7">от 7 до 12 лет</p>
             <p id="for-course-age-13">от 13 до 17 лет</p>
             <p id="for-course-age-17">старше 17 лет</p>
@@ -101,6 +103,7 @@
             <span><img src="assets/images/type.svg" alt="type">Направленность</span>
           </button>
           <div class="courses-filter-item-dpdwn" id="course-type">
+            <p id="for-course-type-all">Все</p>
             <p id="course-type-art">творческая</p>
             <p id="course-type-tech">техническая</p>
           </div>
@@ -110,6 +113,7 @@
             <span><img src="assets/images/forma.svg" alt="forma">Форма обучения</span>
           </button>
           <div class="courses-filter-item-dpdwn" id="course-forma">
+            <p id="for-course-forma-all">Все</p>
             <p id="course-forma-offline">очно</p>
             <p id="course-forma-online">онлайн</p>
             <p id="course-forma-blended">дистанционно</p>
@@ -117,9 +121,11 @@
         </div>
       </div>
       <div class="row courses-list">
-        <div class="courses-list-item course-age-7">
-          <div class="courses-list-item-img" style="background-image: url('assets/images/oit.svg');">
+        <div data-aos="flip-left" data-aos-anchor-placement="top-center" data-aos-duration="1000"  data-aos-easing="ease-in-out" class="courses-list-item course-age-7">
+         <a href="courses/oit.html" style="display: block;"> 
+          <div class="courses-list-item-img oitHover" style="background-image: url('assets/images/oit.svg');">
           </div>
+        </a>
           <h2 style="padding:0.5rem;"><a href="courses/oit.html">Основы работы за компьютером</a></h2>
           <div class="row" style="padding:0.2rem 0.75rem;">
             <div class="col-md-6">
@@ -140,9 +146,11 @@
          
           </div>
         </div>
-        <div class="courses-list-item course-age-7">
-          <div class="courses-list-item-img" style="background-image: url('assets/images/web.svg');">
+        <div data-aos="flip-left" data-aos-duration="1000" data-aos-easing="ease-in-out" class="courses-list-item  course-age-7">
+          <a href="courses/web.html" style="display: block;">
+          <div class="courses-list-item-img webHover" style="background-image: url('assets/images/web.svg');">
           </div>
+        </a>
           <h2 style="padding:0.5rem;"><a href="courses/web.html">Основы веб-разработки</a></h2>
           <div class="row" style="padding:0.2rem 0.75rem;">
             <div class="col-md-6">
@@ -163,9 +171,11 @@
          
           </div>
         </div>
-        <div class="courses-list-item course-age-13">
-          <div class="courses-list-item-img" style="background-image: url('assets/images/web.svg');">
+        <div data-aos="flip-left" data-aos-duration="1000" data-aos-easing="ease-in-out" class="courses-list-item  course-age-13">
+          <a href="courses/webDesign.html" style="display: block;"> 
+          <div class="courses-list-item-img webHover" style="background-image: url('assets/images/web.svg');">
           </div>
+          </a>
           <h2 style="padding:0.5rem;"><a href="courses/webDesign.html">Технологии веб-дизайна</a></h2>
           <div class="row" style="padding:0.2rem 0.75rem;">
             <div class="col-md-6">
@@ -186,9 +196,11 @@
          
           </div>
         </div>
-        <div class="courses-list-item course-age-7">
-          <div class="courses-list-item-img" style="background-image: url('assets/images/cartoons.svg');">
+        <div data-aos="flip-left" data-aos-duration="1000" data-aos-easing="ease-in-out" class="courses-list-item course-age-7">
+          <a href="courses/graphic.html" style="display: block;"> 
+          <div class="courses-list-item-img cartoonsHover" style="background-image: url('assets/images/cartoons.svg');">
           </div>
+          </a>
           <h2 style="padding:0.5rem;"><a href="courses/grafic.html">Основы компьютерной графики и мультипликации</a></h2>
           <div class="row" style="padding:0.2rem 0.75rem;">
             <div class="col-md-6">
@@ -209,9 +221,11 @@
          
           </div>
         </div>
-        <div class="courses-list-item course-age-7">
-          <div class="courses-list-item-img" style="background-image: url('assets/images/animation.svg');">
+        <div data-aos="flip-left" data-aos-duration="1000" data-aos-easing="ease-in-out" class="courses-list-item course-age-7">
+          <a href="courses/animation.html" style="display: block;"> 
+          <div class="courses-list-item-img animationHover" style="background-image: url('assets/images/animation.svg');">
           </div>
+          </a>
           <h2 style="padding:0.5rem;"><a href="courses/animation.html">Основы компьютерной анимации</a></h2>
           <div class="row" style="padding:0.2rem 0.75rem;">
             <div class="col-md-6">
@@ -232,9 +246,11 @@
          
           </div>
         </div>
-        <div class="courses-list-item course-age-13">
-          <div class="courses-list-item-img" style="background-image: url('assets/images/grafic2Year.svg');">
+        <div data-aos="flip-left" data-aos-duration="1000" data-aos-easing="ease-in-out" class="courses-list-item course-age-13">
+          <a href="courses/graphic1Year.html" style="display: block;"> 
+          <div class="courses-list-item-img grafic2YearHover" style="background-image: url('assets/images/grafic2Year.svg');">
           </div>
+          </a>
           <h2 style="padding:0.5rem;"><a href="courses/graphic1Year.html">Школа компьютерной графики и виртуальных технологий, 1-й год</a></h2>
           <div class="row" style="padding:0.2rem 0.75rem;">
             <div class="col-md-6">
@@ -255,9 +271,11 @@
          
           </div>
         </div>
-        <div class="courses-list-item course-age-13">
-          <div class="courses-list-item-img" style="background-image: url('assets/images/grafic2Year.svg');">
+        <div data-aos="flip-left" data-aos-duration="1000" data-aos-easing="ease-in-out" class="courses-list-item course-age-13">
+          <a href="courses/graphic2Year.html" style="display: block;"> 
+          <div class="courses-list-item-img grafic2YearHover"  style="background-image: url('assets/images/grafic2Year.svg');">
           </div>
+          </a>
           <h2 style="padding:0.5rem;"><a href="courses/graphic2Year.html">Школа компьютерной графики и виртуальных технологий, 2-й год</a></h2>
           <div class="row" style="padding:0.2rem 0.75rem;">
             <div class="col-md-6">
@@ -278,9 +296,11 @@
          
           </div>
         </div>
-        <div class="courses-list-item course-age-13">
-          <div class="courses-list-item-img" style="background-image: url('assets/images/grafic3Year.svg');">
+        <div data-aos="flip-left" data-aos-duration="1000" data-aos-easing="ease-in-out" class="courses-list-item course-age-13">
+          <a href="courses/graphic3Year.html">
+          <div class="courses-list-item-img grafic3YearHover" style="background-image: url('assets/images/grafic3Year.svg');">
           </div>
+        </a>
           <h2 style="padding:0.5rem;"><a href="courses/graphic3Year.html">Школа компьютерной графики и виртуальных технологий, 3-й год</a></h2>
           <div class="row" style="padding:0.2rem 0.75rem;">
             <div class="col-md-6">
@@ -309,10 +329,10 @@
       </div>
       <div class="row news-list">
         <div class="col-md-6">
-          <div class="main-news">
+          <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out" class="main-news">
 
           
-          <div class="main-news-img"></div>
+          <div  class="main-news-img"></div>
           <h3>Ученица Детской школы искусств ИнПИТ победила в международном творческом конкурсе</h3>
           <div class="main-news-text">
             <p>Александра Сулима, учащаяся Детской школы искусств ИнПИТ, заняла первое место в международном
@@ -329,7 +349,7 @@
           </div>
         </div>
         <div class="col-md-6 all-news">
-          <div class="all-news-item">
+          <div data-aos="zoom-in-up" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="50" class="all-news-item">
             <h3>Победители Саратовского тура конкурса «Цифровой ветер» приглашаются на церемонию награждения</h3>
             <div class="all-news-text">
               <p>Подведены итоги Саратовского регионального тура Международного конкурса компьютерных работ среди детей,
@@ -344,7 +364,7 @@
               </div>
             </div>
           </div>
-          <div class="all-news-item">
+          <div data-aos="zoom-in-up" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-delay="80" class="all-news-item">
             <h3>Выпускник Детской компьютерной школы ИнПИТ, одиннадцатиклассник Тимофей Еремин вошел в число победителей
               Всероссийской научно-исследовательской конференции «В науку первые шаги».</h3>
             <div class="all-news-text">
@@ -367,7 +387,7 @@
         <h2>Конкурсы</h2>
       </div>
       <div class="row">
-        <div class="col-lg-4">
+        <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out" class="col-lg-4">
           <div class="challenge-item">
             <div class="courses-list-item-img" style="background-image: url('assets/images/digitalwind.png');">
                       </div>
@@ -381,7 +401,7 @@
           </div>
           
         </div>
-        <div class="col-lg-4">
+        <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="100" class="col-lg-4">
           <div class="challenge-item">
             <div class="courses-list-item-img" style="background-image: url('assets/images/digital_start2020.png');">
                       </div>
@@ -394,7 +414,7 @@
           </div>
           
         </div>
-        <div class="col-lg-4">
+        <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="300" class="col-lg-4">
           <div class="challenge-item">
             <div class="courses-list-item-img" style="background-image: url('assets/images/3d.png');">
                       </div>
@@ -499,6 +519,10 @@
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
   </script>
   <script async src="assets/js/all.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

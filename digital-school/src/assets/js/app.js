@@ -1,4 +1,5 @@
 //import axios from 'axios';
+import AOS from 'aos';
 const age=document.getElementById('course-age');
 const courseType=document.getElementById('course-type');
 const courseForma=document.getElementById('course-forma');
