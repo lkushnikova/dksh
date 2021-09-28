@@ -5,7 +5,19 @@ const courseType=document.getElementById('course-type');
 const courseForma=document.getElementById('course-forma');
 const age7=document.getElementsByClassName('course-age-7');
 const age13=document.getElementsByClassName('course-age-13');
+const mobileTopBlock=document.getElementById('mobile-top-block');
 window.addEventListener('load', () => {
+
+    document.getElementById('checkBurgerId').addEventListener('click',()=>{
+        if(mobileTopBlock.style.display=="flex"){
+            mobileTopBlock.style.display="none";
+        }
+        else{
+            mobileTopBlock.style.display="flex";
+        }
+        })
+
+
 
 document.getElementById('for-course-age').addEventListener('click',()=>{
 if(age.style.display=="block"){

@@ -1,0 +1,203 @@
+.mobile-top-panel{
+    display: none;
+}
+.mobile-top-block{
+    display: none;
+}
+.burger-label{
+    display:flex;
+    align-items: flex-end;
+     flex-direction:column;
+     width:70px;
+     cursor:pointer;
+   }
+
+   .burger-label span{
+     background: #fff;
+     border-radius:10px;
+     height:7px;
+     margin: 5px 0;
+     transition: .6s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+   
+   }
+   
+   
+   .burger-label-span:nth-of-type(1){
+     width:50%;
+     
+   }
+   
+   .burger-label-span:nth-of-type(2){
+     width:100%;
+   }
+   
+   
+   .burger-label-span:nth-of-type(3){
+     width:75%;
+    
+   }
+   
+   
+   input[type="checkbox"]{
+     display:none;
+   }
+   
+   
+   input[type="checkbox"]:checked ~ .burger-label-span:nth-of-type(1){
+     transform-origin:bottom;
+     transform: rotatez(45deg) translate(-17px,21px);
+   }
+   
+   
+   input[type="checkbox"]:checked ~ .burger-label-span:nth-of-type(2){
+     
+     transform-origin:top;
+     transform:rotatez(-45deg)
+   }
+   
+   
+   input[type="checkbox"]:checked ~ .burger-label-span:nth-of-type(3){
+     
+     transform-origin:bottom;
+     width:50%;
+     transform: translate(-4px,-7px) rotatez(45deg);
+   
+   }
+   
+@media (max-width: 768px) {
+    .mobile-hide{
+        display: none;
+    } 
+    .mobile-top-panel{
+        display: flex;
+    }
+    .top-menu{
+        display: none;
+    }
+    .top-panel figcaption{
+        display: none;
+    }
+    .courses-list-item{
+        height:auto;
+        width:100%;
+        max-width:100%;
+        h2{
+          
+                font-size: 19px;
+                line-height: 21px;
+                text-align: center;
+                height: 60px;
+
+            }
+        }
+       
+        .courses-list-item p {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: .5rem;
+        }
+    .courses-list-item-apply{
+        font-size: 20px!important;
+        height: 45px !important;
+    }
+
+    .main-news {
+        border:none;
+        border-radius: 10px;
+        font-size: 13px;
+        line-height: 16px;
+        color: #464646;
+        padding: 0;
+        height: 536px;
+        overflow: hidden;
+        position: relative;
+        margin-right: 0;
+    }
+.all-news{
+    height:auto;
+}
+.all-news .all-news-item {
+    border: none;
+    border-radius: 10px;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    margin-bottom:1rem;
+}
+.challenge-item {
+    border:none;
+    border-radius: 10px;
+    height: 285px;
+    position: relative;
+    z-index: 10;
+}
+.courses-list {
+    width: 100%;
+}
+.mobile-filter{
+    display: block;
+}
+figcaption.banner-logo{
+    font-size:27px;
+    line-height:31px;
+    padding-left:1rem;
+}
+.banner{
+    margin-bottom:1rem;
+    padding-top:1rem!important;
+}
+.main-banner-text p, .main-banner-text-a{
+    display: none;
+}
+.main-banner{
+    min-height:200px;
+    background-image: url('../../images/banner-mobile.png');
+    background-size:cover;
+    margin-bottom:1rem;
+}
+.dksh-logo img{
+    width:100px;
+}
+.courses-filter-item {
+    margin-top: 1rem;
+}
+.courses-filter-item-dpdwn{
+    position: static;
+}
+.footer-contact-social ul{
+    width:100%;
+    justify-content: space-evenly;
+}
+.footer-contact{
+    margin-bottom:1rem;
+}
+.mobile-top-block{
+    display: flex;
+    flex-direction: column;
+    padding-bottom:2rem;
+    width:100%;
+    top:80px;
+    position: absolute;
+    background-color: #fff;
+    z-index:100;
+}
+ul.mobile-top-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+ul.mobile-top-nav li{
+    padding-top:0.5rem;
+}
+.top-menu-list-item{
+    font-size: 14px;
+    line-height: 17px;
+    text-align: left;
+}
+
+}
